@@ -23,6 +23,9 @@ if (rom.split('.').pop() == 'bin') {
 if (EJS_gameUrl.endsWith('.multizip')) {
   var romName = rom.replace('multizip','zip');
   mountZip = true;
+} else if (EJS_gameUrl.endsWith('.patchzip')) {
+  var romName = rom.replace('\.patchzip','');
+  mountZip = true;
 } else if (rom.slice(0, -1).endsWith('disk')) {
   var rom = rom.split('.').shift() + '.chd';
   var romName = rom.split('.').shift() + '.chd';
@@ -60,6 +63,9 @@ console.log(readyAudioContext); // keep this it is needed for some reason
 // Load canvas and button
 divContent(EJS_player.replace('#',''), '<div id="loading"></div><canvas id="canvas" tabindex="1"></canvas>');
 
+// Default loading message
+divContent('loading','Starting RetroArch');
+
 // Retroarch run logic
 Module = {
   canvas: document.getElementById('canvas'),
@@ -71,7 +77,7 @@ Module = {
   printErr: function(text) {
     console.log(text);
   },
-  preInit: function() {
+  onRuntimeInitialized: function() {
     setupFileSystem();
   }
 };
@@ -149,9 +155,12 @@ async function setupMounts() {
     setLoader('Bios');
     let biosFile = await downloadFile(EJS_biosUrl);
     var biosPackage = new BrowserFS.FileSystem.ZipFS(new Buffer(biosFile));
-    mfs.mount(retroArchDir + 'system/', biosPackage);
-    BrowserFS.initialize(mfs);
-    biosFile = null;
+    var overlay = new BrowserFS.FileSystem.OverlayFS(new BrowserFS.FileSystem.InMemory(), biosPackage);
+    overlay.initialize(function () {
+      mfs.mount(retroArchDir + 'system/', overlay);
+      BrowserFS.initialize(mfs);
+      biosFile = null;
+    });
   } else {
     BrowserFS.initialize(mfs);
   };

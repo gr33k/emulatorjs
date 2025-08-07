@@ -219,6 +219,9 @@
     "logo": "QmNPpy3aEJqAB3h3QV8B5v9vhvTaXZhgtcnq8AVeXDp2jm",
     "name": "Aquarium by DS (Europe) (En,Fr,De,Es,It)"
   },
+  "01B7943039D37F674808E01EE03126E96DB6892D": {
+    "ref": "E7CE68C28F8CE05E390C2F0A9722138264FF6CD4"
+  },
   "01C86ABB9DA39B210E3FF3C4D33D766D916DC0D4": {
     "logo": "QmSUTKqh6uyX2j1RMFZ1sfrgyQzibhgFYwETTragJJ6Wy7",
     "name": "Samantha Swift and the Hidden Roses of Athena (USA)",
@@ -427,6 +430,9 @@
   "0387D4FB67468C301A8B16FF382D1C0C9FD7F7BC": {
     "name": "Vita di Emma, La - Professione Infermiera (Italy) (Fr,It)"
   },
+  "0389EEF5C2C436EE546EFE99858A94E06813F9AB": {
+    "ref": "F4FF8291B38BF9A33AB280FB9F7625CF4D549473"
+  },
   "03961F7C64148980483CF3B4ABB289B6C2A798F5": {
     "name": "Konzentration und Aufmerksamkeit 1.-4. Klasse (Germany)"
   },
@@ -508,7 +514,8 @@
   },
   "045BD99119395056A9431D5EC754D70A78C6DAE6": {
     "logo": "QmYpcPAgtHGsDNr62pT8zdtf63qV9jp5yK1zjwj2VHuiZH",
-    "name": "Happy Feet (Europe) (En,Fr,De,Es,It)"
+    "name": "Happy Feet (Europe) (En,Fr,De,Es,It)",
+    "vid": "Qmba7gUEPRM78r9qEbVxqpZucVPP7a7aQSREWgjreD3Tv3"
   },
   "0461BFEC72B640D89280D6DCCF4A6C83A4D7AD5E": {
     "name": "Mushishi - Ame Furu Sato (Japan)"
@@ -961,7 +968,8 @@
   },
   "079205368B7D1E919121E82F0DCDF4ED9A06F923": {
     "logo": "QmYvctf9nafMhXwS4fqv44mFfMgupMptyD5wGxG313gpQ4",
-    "name": "Littlest Pet Shop - Country Friends (Europe) (En,Fr,De,Es,Nl,Pt,Sv,No,Da,Fi) [b]"
+    "name": "Littlest Pet Shop - Country Friends (Europe) (En,Fr,De,Es,Nl,Pt,Sv,No,Da,Fi) [b]",
+    "vid": "Qmb2BLZJ9vpT8P6FnkgB4Q8EAeggUrKm4yvvLwbmvg2ktW"
   },
   "079C2A5ADDA0861593D229F6421F370933FA3366": {
     "logo": "Qme5GsXmkqnMrAhVGbsYzY8dAzi6Bq9aEq5CuVYZNeDndH",
@@ -979,6 +987,9 @@
     "logo": "QmQrvERTjrzPnbDdAUUPcJ6KPgh4kcYNqWEMuJCpajkpDT",
     "name": "Daniel X - The Ultimate Power (USA) (En,Fr,De,Es,It) (NDSi Enhanced)",
     "vid": "QmSMrX2UaMzHcR183jb7BmRySUcbLNsNgd53ZZNomEzApx"
+  },
+  "07B976909CB498127C3F27B38327243478E7BB8F": {
+    "ref": "128157A4C615CDAFB6583C394F7B1EA554A9AFE5"
   },
   "07C5A18C554E58A675C2527F4A0305845CED464F": {
     "name": "Gakken Mu Henshuubu Kanshuu - Choujou Genshou Research File (Japan)"
@@ -1067,7 +1078,12 @@
   },
   "089922EA592638E0BF0217C021C65ED727171334": {
     "logo": "QmaNB8Xngf3tsn9p3Hj5phjisC9rtHNP6CHB7k29tussGo",
-    "name": "Top Gun (USA)"
+    "name": "Top Gun (USA)",
+    "vid": "QmdEjBfLadTfcYq2YHrcfVRTH2WSGjfFzJ6X5BD6mWUSCz"
+  },
+  "08A69E1B0CEBED00A9A5F5C559ACE25A1AD65DD9": {
+    "ref": "945F74C7570A57B558B522BEAFA8090CCFB13F92",
+    "vid": "QmcTqirHPptfwSWUGq5Xh7D9c679TfedKvXVrCKtm65p96"
   },
   "08BA5B74699D6C684764FC6C7B61A5597A14999B": {
     "name": "Black Jack - Hi no Tori Hen (Japan)"
@@ -1436,7 +1452,8 @@
   },
   "0B5F88FB0BD39540371AB79FE47D6F3A102A62EE": {
     "logo": "QmdX7TQv5y2FcQ1b6f2zQHF9UA7nxSbp8h7Dh5naXbWaiZ",
-    "name": "Big Mutha Truckers (Europe) (En,Fr,De,Es,It)"
+    "name": "Big Mutha Truckers (Europe) (En,Fr,De,Es,It)",
+    "vid": "QmUbmC1DbMNzdtb7ZTYdimVzHqFXEmQS9T7rtf8PRqr8KY"
   },
   "0B60543279FCD04C437EE22906E10887475A48EA": {
     "logo": "QmR5U4CkMemNPVFzLEYxrQS9VpAP5RvJwCsbN9LSRMpusU",
@@ -1725,7 +1742,8 @@
   },
   "0D9FB4C912E9961A339567C58C193B80589ADB6D": {
     "logo": "QmX9DFXTFaGj8FRrsk4vQm8akEbGV9fbozgQ23bTckYy1w",
-    "name": "Spider-Man 2 (Europe)"
+    "name": "Spider-Man 2 (Europe)",
+    "vid": "QmNtS3vKczzT4wUXytM7Appxn8HznvMWfFwZGthDcivirF"
   },
   "0DB579BCA799E07E39FFE64AF0FFF414635975D6": {
     "logo": "QmNk8GYpE4inmYRm6p7Y9NeYsuQXP5ErJLzv9attjK6KKD",
@@ -1997,6 +2015,9 @@
     "name": "Horrible Histories - Ruthless Romans (Europe) (En,Fr,De,Es,It)",
     "vid": "QmSB4s8eYgDX2E6dnZCkmnRGAzDwCPuuEkg3TkZDJb71w1"
   },
+  "0FD4C0DD6C7CCD61EFFF69F04177FB0B2E722992": {
+    "ref": "0C9F2C80B8658F22474A095263E3DB4E1C9A7876"
+  },
   "0FDA2F4B1896F4AA9056BF4CD8853246DCA4015A": {
     "logo": "QmYzpwBemvdCV3FkYXzkEELFVfeJhkckXx35UZnu7bSh4n",
     "name": "Pictionary (Europe) (En,Fr,De,Es,It,Nl) (NDSi Enhanced)"
@@ -2134,7 +2155,8 @@
   },
   "11400E26610E9247871AC963576A83EBBEBD6CF1": {
     "name": "Final Fantasy IV (USA) (En,Fr,Es)",
-    "ref": "36D44994DC87BEE4524F35E91C3F95E59422F404"
+    "ref": "36D44994DC87BEE4524F35E91C3F95E59422F404",
+    "vid": "Qmb5SdZ5vwLm9AQbo7CGedz9bhR2P8Z1otgihztPbv6Y2J"
   },
   "114121829EFDB64D4CC8CB178F0AF1A32CDFE30A": {
     "logo": "QmRsxegbXY4Kvgt4Rv1ztPadpddEsGgUkpuXp6fcAYswHV",
@@ -2159,6 +2181,9 @@
   "1169D048E92D3EDC776C4ABEED6864393B98B01B": {
     "logo": "QmTGTEEPjMA3TiRq6c6qt8kkuCD7ZeWbAfK6ogRcgCQhv7",
     "name": "Pokemon Fushigi no Dungeon - Ao no Kyuujotai (Japan) (Rev 1)"
+  },
+  "1169D0C2D5F3C835F101EED75DBB421D684B8F4E": {
+    "ref": "9E7D5F21FADD5753395DE4C83A3DDA107006D741"
   },
   "1181AFFAE6D39FEAF4148CCA061F7EEC0BF83540": {
     "logo": "QmdHTYCN5ornZ21yYBaekZXqt7v9GmZ8Z6W1sPKmzLNCJy",
@@ -2411,7 +2436,8 @@
   },
   "134BBBF80D1E8DE61C3DF55906188B8750E59990": {
     "logo": "Qmbi79x9GhDy4y3fxMA6mpQvTBnkxW6sKv5STdm7vQqZvA",
-    "name": "Arthur and the Minimoys (Europe) (En,Fr,De,Es,It,Nl)"
+    "name": "Arthur and the Minimoys (Europe) (En,Fr,De,Es,It,Nl)",
+    "vid": "QmPgrnqdEoSRvLiXqVzSDLNNUpWA1c85ZQmKX8W6u7tiRT"
   },
   "134D40BEF3162F8F8422D8F6D7D500DA8A4527E4": {
     "logo": "Qmb813C75ywKAcPASJwiBXCWBvecspWToKQbn2j8ZcNoP2",
@@ -2541,7 +2567,8 @@
   },
   "1465A7E4F438119D123CAE9B84C966D90EF58C25": {
     "logo": "QmbWoXP7gd6sQSVVxRpusLWrrqqXme8sZ2ryMDz6iDNoMG",
-    "name": "Open Season (Europe) (En,Fr,De,Es,It,Sv,No,Da,Fi)"
+    "name": "Open Season (Europe) (En,Fr,De,Es,It,Sv,No,Da,Fi)",
+    "vid": "QmRoUQs4NRLehyzrxZR7HNDwzbfQAFiaRaRQmzgDygA4Qp"
   },
   "147540A93DFF4E4D83B7D21F3ACDB3F8044AC515": {
     "logo": "QmU48iaeDWadYZPEbegSVKSJagwLWYuNuAkQG3CJp5UmNp",
@@ -2652,7 +2679,8 @@
   },
   "15511D5B8D1A9DA985E5A525BBD58CF280331898": {
     "logo": "QmafhYK9oU7uJdkxeiZXzzC4fiZNrXhCiRFxchkyLoJYRZ",
-    "name": "Hot Wheels - Battle Force 5 (Europe) (En,Fr,De,Es,It,Nl)"
+    "name": "Hot Wheels - Battle Force 5 (Europe) (En,Fr,De,Es,It,Nl)",
+    "vid": "QmQTiiep5HDmZx2Sx79fEGizzKD74ohNE7XvBjsnCSZZbF"
   },
   "155C27DF45AF2B3CE5DE8BCB59830D9412275076": {
     "logo": "QmaRSzsQTt2NdkYJnZbTDoBTKj6uvPxCWdbAKZiQohm8nr",
@@ -2670,7 +2698,8 @@
   },
   "158082697998D58881A82EDC23C29E5E35D3C4B7": {
     "logo": "QmXj2aR9hAb4nmQwNjAZonjjQW7EqZ5ARR5uuWZMWqzoo4",
-    "name": "Rayman DS (Europe) (En,Fr,De,Es,It)"
+    "name": "Rayman DS (Europe) (En,Fr,De,Es,It)",
+    "vid": "QmcrFV9fc5GnhX9cHRmcUHeui7t7XBE75Puk7H29SMNqTa"
   },
   "1581ABBFEA025773347B8BED85DD72769559A1A5": {
     "name": "Huis Anubis, Het - Het Geheim van Osiris (Netherlands)"
@@ -2773,6 +2802,9 @@
     "name": "Mario & Luigi - Partners in Time (Europe) (En,Fr,De,Es,It) (Demo) (Kiosk)",
     "ref": "89C9136DB3C3975C451A907E8BD6861CE6B81557"
   },
+  "16A7D415D04F651E6B03B793E12544369D4BE258": {
+    "ref": "892C0A4877DE1750A83AB97C31EAE156F8E3466C"
+  },
   "16AB692DB558E89503008CF9B8E3311A6EF595B4": {
     "logo": "QmeueBfjUZd4sVXNTCYGLnrHQ9w9DvhM2gwEJ63fSR7fBy",
     "name": "Golgo 13 - File G13 o Oe (Japan)"
@@ -2800,7 +2832,8 @@
   },
   "16DC12AD62DBABB360CA56412A0C9D91C4D34CE2": {
     "logo": "QmQbU7P9nEtEHNmVftuXbsjmPe7N8fxqYFijhWy8DEXNmr",
-    "name": "LEGO Harry Potter - Years 1-4 (Europe) (En,Fr,De,Es,It,Da)"
+    "name": "LEGO Harry Potter - Years 1-4 (Europe) (En,Fr,De,Es,It,Da)",
+    "vid": "QmaoynTC6a6j88FRVHs86wjM63SdiVi8WnAArtjKasGuw3"
   },
   "16DDBEA0BDF91CBB0BC764C3E6E23EE1AEC2212F": {
     "logo": "QmYEShLtDjSFoJqDgLQSfWgdkQJBWzkxmMEk1KMENfprD3",
@@ -2850,6 +2883,10 @@
   },
   "175BF32805325A97A6D30583C71A4304ABD4B40B": {
     "name": "Level5 Premium - Gold (Japan) (Demo) (Promo)"
+  },
+  "176B0427AF7DDE39C85FAAEC2981997E83A64E33": {
+    "ref": "050A3F13D17FF171A66896CE27DF4FAF932469CA",
+    "vid": "QmeCN1mjrXbB4v4nCCKbKPjpvu13XgFYjZWLLiK4QsUEkZ"
   },
   "1773C73BE826D14F08EA47FB5714496C579B891E": {
     "logo": "QmdwnmGx6889H98LUEr74wm4dch4K34MkLrgTEbgdPmudn",
@@ -3057,7 +3094,8 @@
   },
   "1912F10414F039BD47B6A69F70E74665EBEA1276": {
     "logo": "QmUEJawPfanHs5MG3Aqs2uy6NaQPkXeiJwVQc5ZzhSPLA9",
-    "name": "Despicable Me - Minion Mayhem (Europe) (En,Fr,De,Es,It,Sv,No,Da,Fi)"
+    "name": "Despicable Me - Minion Mayhem (Europe) (En,Fr,De,Es,It,Sv,No,Da,Fi)",
+    "vid": "QmPbWrtp3YaZJipBo2yfR9eC6ZWpuxKkJFd9rnPF9PXHa5"
   },
   "19148E7A38E731680FB2A045ED112B115BE90FC2": {
     "logo": "QmSeJCPNBPtMz1yKdRR8ZA4zZ6eh6ExX2cyP2f4RfLd1AG",
@@ -3091,6 +3129,9 @@
   "1942B025F4095AC1D8B779612312043AA3B7CFEB": {
     "logo": "QmatnXenHvWUFDeDjBd9g64AknRXVQYRqTLyqjX6fg6WMy",
     "name": "My Word Coach - Verbeter Je Woordenschat (Netherlands)"
+  },
+  "19501297DD721DE6FF34FFD5CC3CE51113544799": {
+    "ref": "74E42D251B9B7374885330FDCE3CE2CDBBA6BBFA"
   },
   "19693EA8A79ADA8690BAA5A1AA2A839E4C594A95": {
     "name": "Aventures de T'choupi a l'Ecole, Les (France)"
@@ -3263,7 +3304,8 @@
   },
   "1B0CCD465FFC2760DD267CE3E213014357B29CDF": {
     "logo": "QmYQj69oTX4n7LcNW6z7ikryNzYSxgAxp5PFTWFqF1UeHM",
-    "name": "Scotland Yard - Hunting Mister X (Europe) (En,De,It) (Rev 1)"
+    "name": "Scotland Yard - Hunting Mister X (Europe) (En,De,It) (Rev 1)",
+    "vid": "QmcjJtD5JFPHiBo9Ya3b8ykf6iuBwwQRQ2GqPBZ5bAdULa"
   },
   "1B10808729D38E0F2EF10D66156A7493C3F512A6": {
     "logo": "Qme8MVARpKWFoRkWcDAsQsne496btFYuyfUKQFemA2qeQS",
@@ -3513,7 +3555,8 @@
   },
   "1D3FAE1FB0919F25C9B0D72F4215A0760F02493C": {
     "logo": "Qmbf9waivqLuXDWTR4yd3oLCy2kbpzDZNqEnwrFo8Lv86N",
-    "name": "Need for Speed - Underground 2 (Europe) (En,Fr,De,Es,It)"
+    "name": "Need for Speed - Underground 2 (Europe) (En,Fr,De,Es,It)",
+    "vid": "QmP4FKmxpJNVgiEGJf3Rde9F8GFWDhZxTUNsnteAr3dToo"
   },
   "1D3FB94752EE7B85736F11B7F6AA1194E48E6D0E": {
     "logo": "QmWKzePirBJVeMhjgzBr3y72LJh3fgCeiWAroaDDcjuDAP",
@@ -4008,6 +4051,9 @@
     "name": "Game Hits (Europe) (En,Fr,De,Es,It,Nl)",
     "vid": "QmQqZv3thg4EyXc575KYR5GNybHPyCEkEoCmr6AA6kc8WT"
   },
+  "21BA07128A7A74741495FC42F3208182EA894BF0": {
+    "ref": "4A9C9D4F7599D067155942BAB3D0E19C4454A1E1"
+  },
   "21C2112C6C8CB8C80AE5E31266CD73B0D8466078": {
     "logo": "QmWPdVbcJFR4jdVTU5DSXrok4PLTeAve7Jw3GrLcj3aBZj",
     "name": "Manjyeora - Made in Wario (Korea)"
@@ -4017,7 +4063,9 @@
     "name": "Princess on Ice (Europe) (En,Fr,De,Es,It)"
   },
   "21D39A916600EC8D96C99A2D9A2DAE63BCFF4BBF": {
-    "ref": "298541E857FFF37C29F45C043E50D3AE7DA00015"
+    "logo": "QmW8KgeTpp8rSB7mp4xZ4yQDn2E3FwAHZL1gSF7BS1UzWS",
+    "ref": "298541E857FFF37C29F45C043E50D3AE7DA00015",
+    "vid": "QmPB4N29hgkcA1FUbY5SboNgoG4qAHNp33iGyhAzE83WN8"
   },
   "21D49E4FAF021C9096A4C2A79BD423FBA3DDFCA2": {
     "name": "I Love Horses (Europe) (En,Fr,Es,It,Nl) (YWDZ)"
@@ -4030,6 +4078,9 @@
     "logo": "QmVCsC3RPfQunhDGbYbS1ut2NiuGwJBuu2kbA5LFSzFkwb",
     "name": "Dance! - It's Your Stage (Europe) (En,De) (NDSi Enhanced)",
     "vid": "Qmbt79Xi9EaTobnXGHeepXjqxhhAP6a1ju9q7XkxtbaKpq"
+  },
+  "21E7C231E68E36E564AB22864820CDF098F6EE78": {
+    "ref": "9B18477EE36B4A85A51CF0ABDB929C49871F5EDC"
   },
   "21F5ECA9E49874DAEABB21AA29EBBA120A4BDB30": {
     "name": "Fushigi Yuugi DS (Japan)"
@@ -4695,7 +4746,9 @@
     "name": "Art Academy (USA) (NDSi Enhanced)"
   },
   "27590D25EE5D10B3AA1FD6072FD9E7EAE2224122": {
-    "name": "WWE SmackDown vs Raw 2008 Featuring ECW (USA)"
+    "logo": "QmUVB46EJrZ4Eo27hjgM9PpWDgwiNu2x4bYh3aFoJ7JTq4",
+    "name": "WWE SmackDown vs Raw 2008 Featuring ECW (USA)",
+    "vid": "QmdnqJ494PheKGjKTQeM6unFnzbhdWfyXHXqWJqvwDbJxv"
   },
   "275DD68F452A193559CBD33895ED19A234DC1261": {
     "logo": "QmToKCEzAYGzyjivEiud1HcW7AJY9k2RLhv8JMhj5FMeg5",
@@ -4737,7 +4790,8 @@
   },
   "27C7865411EDE7A0AD20920A25BBC720F4AD9250": {
     "logo": "QmbvRGq4DYXibtNnSKqDD4nKxgrSxVRGC52DBvYtECdgs5",
-    "name": "Need for Speed - Most Wanted (Europe) (En,Fr,De,Es,It)"
+    "name": "Need for Speed - Most Wanted (Europe) (En,Fr,De,Es,It)",
+    "vid": "QmT59zPvym52aqnD3n2tbbcoVACXPWGZK3HsHptZX1RApi"
   },
   "27C7DC1C98FCA4E0447948F893FBF4CEE183C86C": {
     "logo": "Qmbu486UKnLXocrL3yyyPmUVByDgBRZ6nArrPKbJSQZ4xi",
@@ -4756,6 +4810,9 @@
   "27DA29942F20410B5573130B9A92DD709493412F": {
     "logo": "QmVTgpQ5AVozyXhCSFDkg8RPdmEPF4Z8w4jPYpo81tYQZV",
     "name": "FIFA 09 (Korea) [b]"
+  },
+  "27F6E0ABBDEC479B97CED7040301AF563BE4028F": {
+    "ref": "D130C45931999221CCA61E1D7BE6606C546C9E5D"
   },
   "2801396022EAB23AD0A596AAC0289285510B01E3": {
     "name": "Line Rider - Freestyle (Europe) (En,Fr,De,Es,It)"
@@ -4851,7 +4908,8 @@
   },
   "28CFA03493A514C1DA9F2211F333C23F6144B38C": {
     "logo": "Qmbt6EqHkzf9NYk1trgfjoJX8FkkdG5U2W9GcaXCVTTirj",
-    "name": "Metroid Prime - Hunters (Europe) (En,Fr,De,Es,It)"
+    "name": "Metroid Prime - Hunters (Europe) (En,Fr,De,Es,It)",
+    "vid": "QmSwpW6nKkS4XhcTJV464HVztERXm8aVCLiSh7fYy3pjcB"
   },
   "28D0F432309C0B9BC99BAC308EF1D94BF9474BF0": {
     "logo": "QmWxmF1Yn3eDnHLudbx6ZBaPCojhULuyJxZELuWSXWMEp5",
@@ -4904,7 +4962,8 @@
   },
   "292C327D7D62125333813378D5992A3C2CCE5128": {
     "logo": "QmRByVqg6pko469WT6GeNL9jSuVHSpVxcFA4KwmkfaDDJy",
-    "name": "James Pond - Codename Robocod (Europe) (En,Fr,De,Es,It)"
+    "name": "James Pond - Codename Robocod (Europe) (En,Fr,De,Es,It)",
+    "vid": "Qmcmru7oF7ExNMyuNodtxvzFUjamJYaPv69hCcHKzeS9Rt"
   },
   "292CDC891EA72AA050224173341E350A17659E1A": {
     "logo": "QmPWeoLfr1VSiYs9NqRh9UDAQ1YfbLCd3ak8z4tiJmJjpg",
@@ -4967,7 +5026,9 @@
     "name": "Nippon Suugaku Kentei Kyoukai Kounin - Suken DS - Otona ga Tokenai! Kodomo no Sansuu (Japan)"
   },
   "2999CFE509D977919EDD020AECA69FB5E7F05E78": {
-    "ref": "11F9E8204E484EAB42181B210C9F214584BE75BF"
+    "logo": "QmUYp93SvTC9feV4f3eJWzkDiuDygxnpoEBJpxzNnCrS44",
+    "ref": "11F9E8204E484EAB42181B210C9F214584BE75BF",
+    "vid": "QmPdQxTYUBrgEJNb3a5FrbnP6udtpg7aceDdN4tAFisDaV"
   },
   "299BBED2CF1DDBB6040225E2289C44FBEEC118AC": {
     "logo": "QmQJifF4SfF2BwnozBkkXnyafPf8g5HE4BmJBHwqJGU7b5",
@@ -5365,6 +5426,9 @@
     "logo": "QmZYRr2QvmJ81dPhfE15y8tBFep3jkAmtn5zgLvR4oPQuU",
     "name": "Inazuma Eleven 2 - Ventisca Eterna (Spain)"
   },
+  "2D272E3BFE03421834EC57F500496041124B68ED": {
+    "ref": "6D0AD285AF2F7C649EC20F85E7FD0F253F1DB2C5"
+  },
   "2D36E89003BCA62F18E2BB2C1DA53F647BB0F92C": {
     "logo": "QmQnsShbCGTE9w9Bq3CKh6oDjxHBaYDy3xD3CMBzb4Qq83",
     "name": "Humans, The - Meet the Ancestors! (Europe) (En,Fr,De,Es,It)"
@@ -5465,6 +5529,9 @@
   "2DB873293CEF9FBDC6151BD175832FC0F2763890": {
     "logo": "QmUTgjD2nQZAa5Xfsv9a9N2rEuzEedjMNYYXdxUSJ2BndE",
     "name": "Digging For Dinosaurs (USA)"
+  },
+  "2DCC2E493C036A58EA44E528C8843EBCFF5350B6": {
+    "ref": "0EE7179C07B853AA23A2B5569CFA5448AAAFDB4E"
   },
   "2DCEC25EA1F087E2E92B1FCD54A1B0B42E1769E4": {
     "logo": "QmQh8n483pJUjTWYVEqDkPfaMBqjgHjCFqTifb67VdqTFp",
@@ -5724,7 +5791,9 @@
     "vid": "QmUfi4bchAHSwNjR5xcCHtEfRBAgwF363uz2Dv8PEKLpzf"
   },
   "302D76465B1D9AC99F52726D779E588D3743E81F": {
-    "name": "AniMates! (USA) (En,Fr)"
+    "logo": "QmPef52A45BGAWDdxaPFKfi8gS9bfQCp1beFAUdx6ah7F2",
+    "name": "AniMates! (USA) (En,Fr)",
+    "vid": "QmUBQhyVfDWRSRbrgoMkTaeRfXVfYkVkEDRNGTyTWLjuZs"
   },
   "30397DAB18A1EFE26E67E3EA45A0B28A4FA6611A": {
     "logo": "QmVshXYCf6emB6UKzARwYADBSHJnY6PTTU5KhCsn1QupXi",
@@ -6422,6 +6491,9 @@
     "name": "Winx Club - Magical Fairy Party (USA) (En,Fr,Es)",
     "vid": "QmZsGoUkhtnnDkgo8ZD28KsuqsW8vfxvKmUzUbGj8K2JVQ"
   },
+  "36B301B6BB5AEAE08A52421454BF074173C22361": {
+    "ref": "EF56D2EEC3EF930EE70828487A1A2AF6776A010A"
+  },
   "36C29947347EEAA8020ED53551C0EC0AA80D1E25": {
     "logo": "QmXqamg59PdAUm1oiXr5jC296YXK3FhdSE2NmJesZwSbRC",
     "name": "Imagine - Boutique Owner (USA) (En,Fr,Es)",
@@ -6459,7 +6531,8 @@
   },
   "37967866B67F807E6A43DBBE90B292827983AB5A": {
     "logo": "QmTcBCb6MptLFzZkRfKVs4464eedtLUgqHukQBsxRoUEYd",
-    "name": "Eragon (Europe) (En,Fr,De,Es,It)"
+    "name": "Eragon (Europe) (En,Fr,De,Es,It)",
+    "vid": "QmRmj3nzXd1EnwwZsm4QM8UgTPxNrGMaDzWtEKZGNnTSTx"
   },
   "379A700AB347131AB38202281F804F3A49D26926": {
     "name": "Kingdom Hearts - 358-2 Days (Japan)",
@@ -6630,7 +6703,9 @@
     "name": "Jewel Match (Europe) (En,Fr,De)"
   },
   "386C8F6B9619062C1AC1BC425B033592D4B2002A": {
-    "name": "Spider-Man 3 (United Kingdom)"
+    "logo": "QmVXNmnru5KA6CaWkdfCm5Ynm4E5cDK7dsZBkvbzi4zsPs",
+    "name": "Spider-Man 3 (United Kingdom)",
+    "vid": "QmSLgs8evEhytbsgdND6t8uAhvQVJ7BD69i5boob8jSMmG"
   },
   "387E1CBADED830D4619AC923595BF166FF8CC70F": {
     "logo": "QmdnwPRLxh4WXXegxxtjdzxFXM5AR3wpCbtrPWS1apo3KW",
@@ -6994,6 +7069,9 @@
     "logo": "QmTgfh7kpNjBCHt3uUVzMn6p9biCnqjN1qw4q7jFsUxm98",
     "name": "Gyakuten Saiban - Yomigaeru Gyakuten (Japan) (Demo) (Kiosk)"
   },
+  "3BC957FFD034A70633E94D30F41B358C978CC1A0": {
+    "ref": "0C84C65EE6B3FAA4EBC875FEE2A3F8B81D38F236"
+  },
   "3BEDFD611DAEA00CA8046171C928F1682E022FF2": {
     "logo": "QmTUCicMV29f1FSMAooLyHGeAophvq4UYHcGR4ugzbfE8a",
     "name": "Knerten Gets Married (Europe) (En,De,Sv,No,Da)",
@@ -7019,7 +7097,8 @@
   },
   "3C118DE1C4ED7FC00757C7B9449FF0ADBDA9622B": {
     "logo": "QmYkrVS526PtqmypQVws6tZTW8hV3VE8mQZNYxuCh3aBKq",
-    "name": "Burnout Legends (Europe) (En,Fr,De,Es,It,Nl)"
+    "name": "Burnout Legends (Europe) (En,Fr,De,Es,It,Nl)",
+    "vid": "QmQrUYgg28febaHs51AoG25K2Tg6tVdMBPzMXfVaZDyvcm"
   },
   "3C143BE67BF1320E514F5B8B3216BC62B2EFA393": {
     "ref": "A0259F4490DE8F676641A6A31934D6C78C129087"
@@ -7355,6 +7434,13 @@
     "name": "Shaun the Sheep - Off His Head (Europe) (En,Fr,De,Es,It)",
     "vid": "QmeS68EtWKMyi1BuExjBDLHa6mGhiUTGnQxeM9Yod2oRMs"
   },
+  "3EE63BB2F4ED8CE1E832AA26FD37D513E75E9B29": {
+    "ref": "DA4760C8AD623CCFD66F5D7B39F2E768C87A2FA5"
+  },
+  "3EE71F660FC56550F48E2DD8808AC6647DAB63B8": {
+    "ref": "DFCD4C7397EBACDAF6993FC2F695CEC6AA6980DA",
+    "vid": "Qmaa2vgad3xNQRLQ92WFSLMNmGNVAkSew2edervrTwDmUS"
+  },
   "3EF06E5A2B3C6080B1901FC49BD69EF4AEE2BCD1": {
     "logo": "QmZ8ZMz4RsukCk8C9C18xdpf8rCdGFm9JbewvQvei3hmNQ",
     "name": "Pokemon Dash (Europe) (En,Fr,De,Es,It)"
@@ -7410,7 +7496,8 @@
     "vid": "QmQnQKVV1nBuntPCSHtedRYEaiJbtEwqxXrgn1aNsoSooP"
   },
   "3F7CC0EB7DF534F3FDA7129BAD6E1034A64D4BA3": {
-    "ref": "60391C65804EE9A9B156CF388192C4D90956DBB9"
+    "ref": "60391C65804EE9A9B156CF388192C4D90956DBB9",
+    "vid": "QmegVDF1Zj3duWkpqApz81mZqBsJDV9o44Y3JapE1fxqHC"
   },
   "3F9D035C5E118784BFE791E9FF61FE20AA9F77E5": {
     "logo": "QmWHessP32Vnx3q8XJWBoYKEnXVeAZ7M4ndJ1mt8fXEgNL",
@@ -7467,6 +7554,9 @@
   },
   "4048B18F3E589E70E58391927C82CA87117D1337": {
     "name": "Cross Treasures (Japan)"
+  },
+  "404F43C6050785A61C7F5DB144F6ECFC2C6E678E": {
+    "ref": "16F85EB1041B73D44C394931E566FBA98A8A70BC"
   },
   "4051FCD1EDCE5A64D9AA385F672C7616EA32D33A": {
     "logo": "QmSRoPXpMAMEhw6BnvvtvMciE1H7xh6CZzmnz7wsRfZJL9",
@@ -7556,7 +7646,8 @@
   },
   "4156C9F3C13AD17CE4158E5EF2CA5B5E0FD007B5": {
     "logo": "QmNbZs8n1UMzq3r7dswZ919vo6b5jPFwUwrZUDb61464Yr",
-    "name": "Marvel Nemesis - Rise of the Imperfects (Europe) (En,Fr,De)"
+    "name": "Marvel Nemesis - Rise of the Imperfects (Europe) (En,Fr,De)",
+    "vid": "QmZKeiVTz7tv1so6UV3RrFBmGx23L8Nn9JG5Sh3dBzptJW"
   },
   "415C7A52C8507DF143E73E0A9863D659E99AAB9D": {
     "logo": "QmWCiMczifDZHtHBRu7JpTuEgPiZrPqRvvoxMCjbxxeUT9",
@@ -7907,7 +7998,8 @@
   },
   "44CB6A2E8410EA42C67FADF4E7C48CB862C27DA1": {
     "logo": "QmXEya64e3Nn8nQ41v5XPSo472ehCaS383A44zUaDD1twU",
-    "name": "Tamagotchi Connexion - Corner Shop (Europe) (En,Fr,De,Es,It)"
+    "name": "Tamagotchi Connexion - Corner Shop (Europe) (En,Fr,De,Es,It)",
+    "vid": "QmXQ9NtHeHtSYVkQwTD48Ceg8LV1WHu4uj4vryYo7D2MkC"
   },
   "44CE4E823E65DDBFFC26833B96DBD2E810AAD539": {
     "logo": "QmRWh1Zub5NnuMsAKisXNk4s6AKMsEzjWQs5tF8S4to8W4",
@@ -7955,7 +8047,9 @@
     "name": "Planet Rescue - Animal Emergency (Europe) (En,Fr,De,Es,It,Nl,Pt,Sv,No,Da)"
   },
   "4535A7E99DD08E0DE3B243AF2C346FFAC2B6A2D0": {
-    "name": "Who Wants to Be a Millionaire - 1st Edition (Europe) (En,Fr,De,Es,It,Nl)"
+    "logo": "QmXNEDSduYdtwP4v82uBFuEcDS5TXauJBndApiEZRB6YN9",
+    "name": "Who Wants to Be a Millionaire - 1st Edition (Europe) (En,Fr,De,Es,It,Nl)",
+    "vid": "QmePX8nXSmz3yv5Jwy5AdRAguGntRcFKXkCrBgr79Rda1y"
   },
   "4536CA3506ED718AC7E9A946809B6CB14789D53F": {
     "name": "Pass Your Driving Theory Test - 2010 Edition (Europe)",
@@ -8032,6 +8126,7 @@
     "name": "LEGO Batman 2 - DC Super Heroes (Europe) (En,De) (Rev 1)"
   },
   "45C176FEE0476A36CA97968007EFBDF5437D75FF": {
+    "logo": "Qmd6y8KEnBptkktWqogo5KWXQGaehzBKkpxj3nLHPsMkPx",
     "ref": "32BA2BF63FDAF16B48DAF30F76A3F2AD5967DDE7"
   },
   "45F6C60670EC440899985FE82CCCF076C5E9C1C1": {
@@ -8100,6 +8195,9 @@
   "4661D31DEEBA3B67A40628E1705242231D82F23A": {
     "logo": "QmR5C9w3e4kv3UxRetpu2DEB1mjZjZNe872zMeFKk1vjYo",
     "name": "Sudoku Master (Europe) (En,Fr,De,Es,It,Nl)"
+  },
+  "46685EFDBC2C1004E236CA0CDB0B108B16110E32": {
+    "ref": "C2215288612096FA1B8D707EEEF3C37E094BA266"
   },
   "46705BAD8349B0549627C4F57B27D98185251C2A": {
     "logo": "QmUMHEUdDiya73H4zbsvDWng5BJ2HpScAQAUsx7eLABuc9",
@@ -8199,6 +8297,10 @@
     "logo": "QmRWR248BTPZc4mPCqF8DeDUUVy2mKVP8joBzg1Z867xch",
     "name": "Marvel Super Hero Squad - The Infinity Gauntlet (Europe) (En,Es)"
   },
+  "478668DF8E124C1659B00B2F4E3989E61E38744A": {
+    "logo": "QmRutat2vJMdQ2pyQydrZp8Wn7EkrFSktc55Wcb9DByjqp",
+    "ref": "BC696A0DFB448C7B3A8A206F0F8214411A039208"
+  },
   "478E7670DC6D116B2D7D69A2C104A62482B3181B": {
     "logo": "QmXmyGv7QBVfXNQ6Ka5EE4tWxfwXgjBnw6WDiYFQDbzjtr",
     "name": "Fish Tycoon (Europe) (En,Fr,De,Es,It)"
@@ -8263,6 +8365,9 @@
     "logo": "QmeaLusMVvDC4aFugHm4jEsWxGixNuCmExQfxLV96FGkjA",
     "name": "Gummy Bears - Mini Golf (USA) (En,Fr,Es)",
     "vid": "Qmea1DPYN3BvNDnKWub6kR66CH3nEQ6VkpSisNUSro6M8J"
+  },
+  "4806E44A33AC978E3795B8FD7BD82A61E94100D0": {
+    "ref": "BC10521AC1D9FAF194CF95A431EE31F88793ACDD"
   },
   "48121F108FF35833F4E1F6CB4CEC7B7AE4A557BB": {
     "logo": "QmQJNeA1NqcNL51Bg4ZUSeLKba1rRnuCeVfyFFPQrbgvmB",
@@ -8486,7 +8591,8 @@
   },
   "4A387B4ECE8C28B5A5025AB38CCDC23504E24EA8": {
     "logo": "QmYsDZyNofHKy5TdL4aDbbcY6bp4EsRaUpcjmySpVwtR7R",
-    "name": "Shrek - Super Slam (Europe) (En,Fr,De,Es,It,Nl)"
+    "name": "Shrek - Super Slam (Europe) (En,Fr,De,Es,It,Nl)",
+    "vid": "QmavpJdKdkfceP5uNDejZoi8r3kdweFWRy6T2KmKThWu3N"
   },
   "4A402CE81EC78C13935D120B663599A21B8A9688": {
     "logo": "QmQxh8B7nrhBdKWoJxCDFQmTKiPvoS33HEnHmiJ8V8CkM1",
@@ -8634,7 +8740,8 @@
   },
   "4B9021D12B3A225F778D9E95FAD5D9A2B7F39C97": {
     "logo": "QmRMmXP9dBvVgE2RmqChqMiKThod8EoGFFeRDKZ2TdUHLA",
-    "name": "SpongeBob SquarePants - Creature from the Krusty Krab (Europe) (En,Fr,De,Nl)"
+    "name": "SpongeBob SquarePants - Creature from the Krusty Krab (Europe) (En,Fr,De,Nl)",
+    "vid": "QmdUgnix1Dr9FD7qCswRquhcbhRLkXJGfYwAb6nWJNkmgP"
   },
   "4B9301812E556A8FFC94437BAFBF9DBC24F781B2": {
     "logo": "Qmbu3m6EZxc97znRoopb8PUChFbgDGXcWvF3dmrsCV5eXF",
@@ -9237,7 +9344,8 @@
   },
   "4FEA74D7E2BBB3BD2EF245E50AE9E78839E41665": {
     "logo": "QmZKdi3fZkcmMGS1kRcknghTdgK5k5eq4Fsc8gQAW1HUbq",
-    "name": "Bermuda Triangle (Europe) (En,Fr,De,Es,It)"
+    "name": "Bermuda Triangle (Europe) (En,Fr,De,Es,It)",
+    "vid": "QmP7Bs9XWiaSbKTwrqhUnC7S93NyR6oExQD7K8EvrCPZEQ"
   },
   "4FF157F38FCE367F9644DCEA21AB492680C861C2": {
     "logo": "QmUgsBw2aPHr67ydK3oPt1pdDi1Gsd2uwDXbqRUzPNLZC1",
@@ -9329,6 +9437,9 @@
     "logo": "QmRpijv2htD1GPwwUzVdDCgBWam2NhpcuqX3nPT3qPis6h",
     "name": "Spiderwick Chronicles, The (USA) (En,Fr,De,Es,It)",
     "vid": "Qmau9ZwD3dAENfKqDkMevTTqevn5unkBLJhryiE8xcYtBQ"
+  },
+  "507C94D8445E66E19B58AB2469D71583E92B72B4": {
+    "ref": "E86DFE87BFA285B545DE6ACCAD61379F010BF31F"
   },
   "50822B6303714BC4F11AEB811BFA45FE0F9F9E1F": {
     "logo": "QmPRNgYsa6aqnNnLojJNfQgKUW9k7NXXistMg6vGq2v4dR",
@@ -9561,7 +9672,8 @@
   },
   "522C99A1484E91AA76615063E5A6A8201D402FED": {
     "logo": "QmRXUM8HpmvmCEacXThSPMs9MY2kzj8z7SvR7SK9JCaevf",
-    "name": "Shamu's Deep Sea Adventures (Europe)"
+    "name": "Shamu's Deep Sea Adventures (Europe)",
+    "vid": "QmVy6ZjLxBBaQTf3zMT916gBcySysoimnxz4V9m41sWVTg"
   },
   "5231E561A5C6804B6453904F55B0734CF043F048": {
     "logo": "Qmeid7E8CiTGnEHBjCwP9TbNh55VgH4iyJDqx7BMz1A1iw",
@@ -9608,7 +9720,8 @@
   },
   "526EB84C97794B376C0C1CE1A439BF77B42B3082": {
     "logo": "QmSwL74EZdkeXD2YuUYtqu3Wipu236AdK7qCk2uVXt4foy",
-    "name": "Scooby-Doo! - Who's Watching Who (Europe)"
+    "name": "Scooby-Doo! - Who's Watching Who (Europe)",
+    "vid": "QmawqJFTJDmQL9uxiePnjF71e6r8Ht5rweSZcWXSW6mX5t"
   },
   "52738364472AC14F1A3BFCEFDCA5DD31B34A6068": {
     "name": "Nanpure 10000 Mon (Japan)"
@@ -9667,7 +9780,8 @@
   },
   "52CA1554A8A4C5F7391C8332B78D17CEA781747E": {
     "logo": "Qmd3jJyAJW6JnijktrtAPFhSjPWpg7Jg4AE26SF2W6mAo7",
-    "name": "Ghost Trick - Phantom Detective (Europe) (En,Fr,De,Es,It)"
+    "name": "Ghost Trick - Phantom Detective (Europe) (En,Fr,De,Es,It)",
+    "vid": "QmdUfrGiHRx2qejMju7hyupzYZdnbaTaQx7dzuV21nHuPi"
   },
   "52CB43C3DBB5A9FDD3CC2A56B4F4941CD5BB6E46": {
     "logo": "QmVMQohTWQ5ktbVX7BdW9gzauTeC6m1pzceJdL8NUVEe3R",
@@ -9863,6 +9977,9 @@
   },
   "54DD19EB2A38720CEAD4BF8BB417933F724B70B2": {
     "ref": "B62AD47B05CD87A411508AB1DE59AA8884C0D259"
+  },
+  "54FA41F7C53BC2C8DD950DF629CF28590B791773": {
+    "ref": "7282C195DDC6BB5F8EAA08E880AE5F1FE9FBC2B9"
   },
   "54FF318FA1E72F225662785507595C813166959B": {
     "logo": "QmaCgYsizJjdLfwHD6sLjWNGMDTjZzK1m4XUQgpCxDGeCQ",
@@ -10340,6 +10457,9 @@
     "logo": "QmSstMgxVRzespUovvNNFR9Jb4EAVkxqy6sWy2E349Nv2C",
     "name": "LEGO Harry Potter - Years 5-7 (Europe) (En,Fr,De,Es,It,Nl,Da)"
   },
+  "584D8A34014B895D75AD66A404EED0982A575869": {
+    "ref": "5A3AA61B655561BBE804E0AD6B553A0B2A664FED"
+  },
   "584DEFF5D3097D3F0163D053752A14BED740BD19": {
     "name": "Silly Bandz (USA) (En,Fr,Es)"
   },
@@ -10442,7 +10562,8 @@
   },
   "59059C8A2C23F13CD8CE93B26B10499FFF16AFA8": {
     "logo": "QmeCK9Bp1i6NLud9BDVHSLaBnfyJiFfHLXHVGzAoexaFsJ",
-    "name": "Dragon Booster (Europe) (En,Fr,De,Es,It)"
+    "name": "Dragon Booster (Europe) (En,Fr,De,Es,It)",
+    "vid": "QmNtDATtGydj6Ma3V9Q1fjdUczcf3xKnS8JRnYd5Bj1xYi"
   },
   "59174B3864CD4944A758AD54BBC75A07B1E70CBA": {
     "logo": "QmbWoXP7gd6sQSVVxRpusLWrrqqXme8sZ2ryMDz6iDNoMG",
@@ -10627,7 +10748,8 @@
   },
   "5A8D22D41CAA2C0FF41FB4A2B885A6BE607E22D9": {
     "logo": "QmZUHhdbJv4EosVnphsom8hEedvdENvp6TDNtc4945hpWE",
-    "name": "Advance Wars - Dual Strike (USA, Australia)"
+    "name": "Advance Wars - Dual Strike (USA, Australia)",
+    "vid": "QmZoBie2ysncuercpScraaRPVrEfDfgyszbyQKLL6USuxG"
   },
   "5A9109EEBAFE2829132C6E81520DDB048082B683": {
     "logo": "QmVgMpb6uLEATXtzwYSD5tHEvMFictBUPS7FfPUm8aDHGR",
@@ -10643,7 +10765,8 @@
   },
   "5A9D6D38288C248E30649C70483E79B17BC3D2C8": {
     "logo": "QmYFFGA5ysmChHAx59bBRt8F1Ms3EPbcG1izcy1X1PkqT7",
-    "name": "Justice League Heroes (Europe) (En,Fr,De,Es,It)"
+    "name": "Justice League Heroes (Europe) (En,Fr,De,Es,It)",
+    "vid": "QmUEFKFG8bbGgPTyNeWP1KTdHNJ8jimZDTmBiB1UzjSbux"
   },
   "5AABD189F7DE53FE719AC93DC4EB2755CB9DA62E": {
     "logo": "QmSm7DjPa59jK3JRpBrcKrxSBKdohqwE8WGDwWgwdSmsy6",
@@ -10793,7 +10916,8 @@
   },
   "5BA49AEB2E68CC3E616E9B5A77659CA42EBC8D6C": {
     "logo": "QmSmocC86zDE4Q997DrSF9Mx3qxKDJuGDeyw6gErfuGoAg",
-    "name": "Chicken Little - Ace in Action (Europe) (En,Fr,De,Es,It)"
+    "name": "Chicken Little - Ace in Action (Europe) (En,Fr,De,Es,It)",
+    "vid": "QmXRTFKiVTaqHBs4TaNB76yRvhEMT1cygk9vuWZa4CB9Hh"
   },
   "5BA9442B141BB4E48EBFA0308058B13F3053CB14": {
     "name": "Apollo Justice - Ace Attorney (Europe) (Fr,De)",
@@ -10850,7 +10974,8 @@
   },
   "5C28F571B0DF3CBB20B82514D93414F9186C291B": {
     "logo": "QmR1WJWC1Ambd7xnKVY4LSRPPz6D3sTNGwpj6USnH92AET",
-    "name": "Tom and Jerry Tales (Europe) (En,Fr,De,Es,It)"
+    "name": "Tom and Jerry Tales (Europe) (En,Fr,De,Es,It)",
+    "vid": "Qmcou2Cgq6jgfD1yLc7rcFYg3UwBDkWVbQ6ZCd7svgnZR9"
   },
   "5C2C337B9DE9EEA32F62BAD7B41B6DF80687F69A": {
     "name": "GEOlino PowerQuiz - Wissen fuer Kinder (Germany)"
@@ -11120,6 +11245,9 @@
   "5EBCAE3F505F3C6CE2201C4EA850A69A021A6FA0": {
     "name": "Shounen Sunday & Shounen Magazine - White Comic (Japan)"
   },
+  "5EBD2D4ACEF2C5C2F5BB2EECFB06717BD16F2F81": {
+    "ref": "47530FF87E608F88105A314FDF36DC385F8DEC94"
+  },
   "5EBEEA532DD92EE060A3EC6EBD121260C706C44B": {
     "name": "Londonian Gothics - Meikyuu no Lolita (Japan)"
   },
@@ -11259,6 +11387,7 @@
     "name": "Pokemon Fushigi no Dungeon - Ao no Kyuujotai (Japan)"
   },
   "5FD95AC899F05A5B8F9FEE4424FEE3621E412048": {
+    "logo": "QmZt7jUqwTWrRYzUHPWmaavecHNk8B6yZqc9ccsTxifkjd",
     "ref": "76BEAB4CEDA8CC8CE51D384EC50FCF7777135DFA"
   },
   "5FDA29F19A637279BA4C2504AAA83E19CE2402BF": {
@@ -11352,8 +11481,9 @@
     "name": "Pokemon - Weisse Edition 2 (Germany) (NDSi Enhanced)"
   },
   "6067445E44F4EC2C6DAECD9D21E52F19D4273F53": {
-    "name": "Metal Slug 7 (U)(XenoPhobia)",
-    "ref": "F537675DE2B50AE7B940D206D06C38F0452E385C"
+    "logo": "QmXCwM59TvhDXVyTxa3ZXTewXiBu52in1e7HTHUGcyi35g",
+    "ref": "1241D1DDD91FB4C2A3FA3D99AFA622FEC30DAC7B",
+    "vid": "QmdfHdFma4DzM5wKHRZuGHCUDnCfm1RhWkww1rxW1JeCR1"
   },
   "6076CB21CF8C2E6664A4B860848D157E605A7D76": {
     "name": "Sugar Bunnies DS - Yume no Sweets Koubou (Japan) (Rev 1)"
@@ -11764,9 +11894,13 @@
     "logo": "QmPuxXQ657p6kGi7BfY9TdnrjMLs6LdV71rY5EpY4zdmQB",
     "name": "Rayman - Yeopgitokki - TV Party (Korea) [b]"
   },
+  "64A7CB057A6EC8F317F552112B51412C8393792C": {
+    "ref": "5DB0CAC8084FFFE856597A358A88D098B22626A4"
+  },
   "64AA5F7AC470D7299840058AA52827A53E23C25D": {
     "logo": "QmeWPcnfQ3ynhVbM9d69zj45ggNrx4wFyjiZnxjmpYsLdU",
-    "name": "Simpsons Game, The (Europe)"
+    "name": "Simpsons Game, The (Europe)",
+    "vid": "Qmewap6jAhLDgX69MozQjpxmDmJZKU4L2D1NRbknnd9Mk1"
   },
   "64B2422246C3CA9292B9828B39990DBEBFBA99CA": {
     "logo": "QmY4ZN3b6gMC1aSBZXLq97KhFbvpYGqgggRw5S89cYVjis",
@@ -13110,7 +13244,8 @@
   },
   "70618B1CD85C3A2E1A3E5185155415C4F688AE84": {
     "logo": "QmYXdXES4gGAMHLvZHmZoPgSGHn7HsoT6KfFEk75e5phC4",
-    "name": "Ice Age 2 - The Meltdown (Europe) (En,Fr,De,Es,It,Nl)"
+    "name": "Ice Age 2 - The Meltdown (Europe) (En,Fr,De,Es,It,Nl)",
+    "vid": "QmRqMuKpwBbjojtBdVecCJAdiEnCzmevKwp4WKMcqtc29c"
   },
   "7064FB02D0BC1FC5187FAC52EBBF46A48EA5684D": {
     "name": "Soreike! Anpanman - Baikinman no Daisakusen (Japan)"
@@ -13382,7 +13517,8 @@
   },
   "726D7FB9DFC15BDD83623F78F98D14CAFB040A7D": {
     "logo": "QmdHTYCN5ornZ21yYBaekZXqt7v9GmZ8Z6W1sPKmzLNCJy",
-    "name": "Space Invaders Revolution (Europe) (En,Fr,De,Es,It)"
+    "name": "Space Invaders Revolution (Europe) (En,Fr,De,Es,It)",
+    "vid": "QmV8D34bYNSHkK6srk7Jx2eGEMNAGf1kan2tEscfNYouz1"
   },
   "7270BC204BCCAFEA805C2B84DE903782940EB1A7": {
     "name": "Duden - Einfach Klasse in Mathematik - 3. und 4. Klasse (Germany)"
@@ -13623,6 +13759,9 @@
     "logo": "QmVtVyrcJWh4sZ8kyy93GMA89a2EoeWAFrU5abW3rd5bKg",
     "name": "Settlers, The (Europe) (En,Fr,De,Es,It)"
   },
+  "74BEC7AE1D585F8056D4E3B5C51DB40CCE251BBF": {
+    "ref": "14E78C18D2C561E95A109104BB2F39AE24F4C33A"
+  },
   "74CA3F21EDCFE6DFAB89A6A31CEDA484D6C2DC6B": {
     "logo": "QmNaTpxciHU3weNXedmZobw2Lykos93DDNBBpt4Kbwcjpz",
     "name": "Kirby - Canvas Curse (USA)",
@@ -13667,6 +13806,9 @@
   "751EFC4337D2AE53676B670D003536A84B7D02B9": {
     "logo": "QmbNWqetKhHEaKfVsME9BP15L7k9iinaspY3RNpzm8vMM7",
     "name": "Littlest Pet Shop 3 - Biggest Stars - Purple Team (Europe) (En,Pt,Sv,No,Da,Fi)"
+  },
+  "7528430C004B7F1DB94358903B8127A66DE6FED8": {
+    "ref": "BBB18E8A4AA9FD845223D679C0E9207DC9374477"
   },
   "7533E0C6E0042096C29523EEA9017BA09D40A265": {
     "logo": "QmfNvvZw23quULzbcg2x9Xo1MbSTVp89EVNJNRrpQaPhTa",
@@ -14128,7 +14270,8 @@
   },
   "79B3E16AB41BBC38C5D6775D6F4017BEC9BF7C38": {
     "logo": "QmTAFNVXtrqJA7qrFB8JGyNvCDuv15ebXHzR5ztTMkTwwQ",
-    "name": "GoldenEye - Rogue Agent (Europe)"
+    "name": "GoldenEye - Rogue Agent (Europe)",
+    "vid": "Qmf4gmhxgHGcUkdSSMgUbd5XSoceGfRGVifFmf9YHE8zHY"
   },
   "79C532442D72A18A87F88AE1319B63B9D583327D": {
     "logo": "QmZ2UkCdcnkz8RHUT11dvxamjjYQQYc9yKLusHsCEsHAW9",
@@ -14192,7 +14335,8 @@
   },
   "7A6B41385F1C020EF315B1B4F327883ABD8D2159": {
     "logo": "QmYBXosnLr5Ka2BPSdATQQ6tYp1yA1v5jnXf64ZipSZoju",
-    "name": "Mario vs. Donkey Kong 2 - March of the Minis (Europe) (En,Fr,De,Es,It)"
+    "name": "Mario vs. Donkey Kong 2 - March of the Minis (Europe) (En,Fr,De,Es,It)",
+    "vid": "QmZM4kDxjiXqWYf9Se1Ut8i2bAc3cGxtY5VtsBExk2fh4x"
   },
   "7A71299C9CF34A85A4D99AB6BA1D9474CF5E3D91": {
     "logo": "QmVcHoaka9ktp5jW7xYXDmzAuzwT9hXVJH6H7m61p7xY4v",
@@ -14310,7 +14454,8 @@
   },
   "7B6C0AB8D18C8ED53B34203D538DCDC196F696A9": {
     "logo": "QmZS7uasFRYfhhmXfAKjMvKhRqsQ8nxXeksJ5wGDrbfVeb",
-    "name": "Robots (Europe) (En,Fr,De,Es,It)"
+    "name": "Robots (Europe) (En,Fr,De,Es,It)",
+    "vid": "QmSSNhZz3xnYA4t289GYeqVc1kX6k3ks4Y1w3x8SujjNDb"
   },
   "7B7A76D2AA928D2B0CB65C2B712CC40C22E2F3DC": {
     "ref": "B4F7F1666B540CE378AE88BB3AA649B7337BAEFE"
@@ -14515,6 +14660,9 @@
     "name": "Boing! Docomodake DS (USA) (En,Fr,De,Es,It)",
     "vid": "QmfNzr2NuWorjZf7PzbnMmca1gFKb5NEqvV8wSV4uhPB1e"
   },
+  "7D3423D21C199926C12DE2A4DCF441748F23F00A": {
+    "ref": "04E078372C7060D4715535795B792EB3564A088D"
+  },
   "7D4D418C5C466E9C389C0ACBC3F55C9F2C04AE82": {
     "logo": "QmT5FaKZYP7EvPWfaei2Rf8zN6RC7Bq2q4DJeLvuqjc6QS",
     "name": "Who Wants to Be a Millionaire (USA)",
@@ -14535,6 +14683,9 @@
   },
   "7D67416DA3E6B9FF9C57E5856EEFB8FF1F09CD53": {
     "name": "Alssongdalssong - Myeonghwatamheom DS (Korea) [b]"
+  },
+  "7D776362796D38FBBE88B0C618703B5105836488": {
+    "ref": "C2D2434D0323312F4FC2680D8FF9659BE7E38201"
   },
   "7D786318090F6C2FF1D93EE6A421004BEFDC58E2": {
     "ref": "490FB4086E17E5CEAB46835A7F511C8D6C765443"
@@ -14647,6 +14798,9 @@
   },
   "7E5EA4425A24A214CFDE4214B76438338AB5E9B1": {
     "name": "Illust Logic DS + Colorful Logic (Japan)"
+  },
+  "7E672E095AB690A34903F8086059BFA4145C8436": {
+    "ref": "FD2CB1F433DC570EDABC1107CB5B615862B95337"
   },
   "7E80BD91272592564AE0775D1CCE692E4174E90D": {
     "name": "Blazer Drive (Japan)"
@@ -14766,6 +14920,9 @@
     "name": "Captain Morgane and the Golden Turtle (Europe) (En,Fr,De,Es,It)",
     "vid": "QmNpMJiLsRJr7u5JJLX7CrEWTKQH4xAYREtRpLUsvNRMfC"
   },
+  "7F41865B5230240A2D1676DD76CA5C97BB8D8258": {
+    "ref": "D9B2F302DE2CA370D3EE41E48DA004D8729D2219"
+  },
   "7F47775611C9E79B16B37ED7A6EDC5A8B8ACFDB8": {
     "logo": "QmUjp1tyX7mPmYJdYatv1fHM5bDS51c3FdCR9pBrzdErWM",
     "name": "America's Next Top Model (USA)",
@@ -14776,7 +14933,8 @@
   },
   "7F87B1C5A68C41D70B8254F0E705F0F1BCBA6E6E": {
     "logo": "QmQAYMGtrPMv5HVDcGaNAQjZz2Vyty7cok9PNNJah9NGoV",
-    "name": "Dragon Ball Z - Goku Densetsu (Europe) (En,Fr,De,Es,It)"
+    "name": "Dragon Ball Z - Goku Densetsu (Europe) (En,Fr,De,Es,It)",
+    "vid": "QmSfe8h4F61RYa5vQQ1szxDbLsWECdd3B2y8UnUhgyDBRr"
   },
   "7F8D79166861379EB36205ADAA68D5789C56B11E": {
     "name": "Tokuten Ryoku Gakushuu DS - Chuu 2 Rika (Japan)"
@@ -15146,7 +15304,9 @@
     "name": "Jane's Hotel (Germany)"
   },
   "82A4A38F550B15C39E74A5BB6DEF01C9A5E346B2": {
-    "ref": "8B91D8D2793212F45C4C88BF757980D09F58748F"
+    "logo": "QmYyQXD1A5q7JFR9hCxb6s1TKnRiokqANnaUoDFrtWc6mM",
+    "ref": "8B91D8D2793212F45C4C88BF757980D09F58748F",
+    "vid": "QmegCKJd7KLX18ZHmmY6Rjs7B9qGeS6xc6TtQuQfNmWixt"
   },
   "82AF4F9F945EEAF4FBA54D05C3199E0741517DD3": {
     "logo": "QmdqGKXH5akVqG9DVN5WEqVf9rz7pgL6DrM9xA4sttPYzU",
@@ -15423,9 +15583,15 @@
     "logo": "QmXNPXmnPGtn6Q1kr8Zp7c27oxE7yN8RjA2juEtpe79k5C",
     "name": "Back at the Barnyard - Barnyard Games (Europe)"
   },
+  "852EE31D50A1785535C4BE41F9FC61270D2D4904": {
+    "ref": "4C25C73C28CA7E82C396C3D8AC7CF5D047EF0075"
+  },
   "8541320D478FF80BECEA6A20F19C6B795280393C": {
     "logo": "QmZbEHKAp87ic2c6NZZXCHK9NBjYBxkcAQ7i54hvnie2cS",
     "name": "Boogie (Europe) (En,Fr,De,Es,It,Nl,Pt)"
+  },
+  "8549D3EE736A69815376DB21CE0C6CFE224E51BF": {
+    "ref": "EC9A5BA3D51692391C0950E090F73056EB11AD67"
   },
   "855A02019536605187A436635C1210830E5F65E6": {
     "logo": "QmUKM7Ub95iYF9dRhdBLGnb5DXQm61igoV8dGLmmPHMxvF",
@@ -15500,6 +15666,9 @@
     "logo": "QmfEMVQouvzSGLaNte8uh8DgcFFBT8nLNvruFxmvorbGUX",
     "name": "Escape the Museum (USA) (En,Fr,De,Es)",
     "vid": "QmQA94doFRh5fe8nVhx73gYoGfdSVjCeYvZYTYimtRJXKg"
+  },
+  "85C5E0F2992FD08D4A325D0870FDD17747EB85E0": {
+    "ref": "049BEC33E2296E9D33FD44C83EBB5FAFE66A753E"
   },
   "85C7A669932663A544EBB9710C5BA33CFBEA57D2": {
     "logo": "QmV88SyHpDkLAVqoRZq97UVACdCwbumRn4XvzwShyS3ViH",
@@ -16084,7 +16253,8 @@
   },
   "8AA8AF0F74F77031A33F3E8E6EBA0C277E728A7E": {
     "logo": "QmYiLsNAoQqgWfMJED7XiQgLP4gzACT9UJ4KhZwgmSVUL4",
-    "name": "Superman Returns (Europe) (En,Fr,De,Es,It)"
+    "name": "Superman Returns (Europe) (En,Fr,De,Es,It)",
+    "vid": "QmXEtFmD5BsiKHYaMZy8TGfCFdL9E8QwU4pPgH8Pood2PV"
   },
   "8AADA3BE252092F3F0BB944EB9CCE89076FFC568": {
     "name": "K3 en het IJsprinsesje (Netherlands)"
@@ -16099,6 +16269,9 @@
   "8AB92E603E40116AF77B543C876DC2EB4C511976": {
     "logo": "Qmeu8CDJYr8LboHk88HyqK6EdnF8EaVvUgdDJtJDyJr4yj",
     "name": "Bratz - Girlz Really Rock (Europe) (En,Fr,De,Es,It,Nl,Sv,No,Da)"
+  },
+  "8AC6AD92D9FD62F23A56F516301A13679D06FCB5": {
+    "ref": "276AF2C3EB3A26911559542E74211A0E5B268D73"
   },
   "8ACFD5C964FDD76C55FD0B18FCA611C6F683393E": {
     "logo": "QmVyPauF89gDHDV6rsgzjLxDLtbAVrCyUm1ZEzpqRuws2J",
@@ -16753,6 +16926,9 @@
   "9007F5DDD5E0540A192628C0FF9B45E97438845B": {
     "name": "Minagara Oreru DS Origami (Japan)"
   },
+  "90081D21FA1F9990308D3D36950E80D477C695F6": {
+    "ref": "5A072A4F51957DA5FE75F70FC5A0B3A5F3D2A6F3"
+  },
   "901508D8AABE399BCB907F742C1DE1308E05BCD9": {
     "name": "Sunday x Magazine - Nettou! Dream Nine (Japan)"
   },
@@ -16818,7 +16994,9 @@
     "vid": "QmUVojjUs55mjtnUZbxWSxGLHcfkeprPfzfSxBLGHM9kPr"
   },
   "90965991926226F418D0ADAFFD529AA1E8E50016": {
-    "name": "Sonic & SEGA All-Stars Racing (USA) (En,Fr,Es)"
+    "logo": "Qmc2Mw4L4E1BuSh4eRrPygczn4bWtq7cwF3hVY4ZUM5G6U",
+    "name": "Sonic & SEGA All-Stars Racing (USA) (En,Fr,Es)",
+    "vid": "QmWKM1s7T18knudtLmtSdzsjwDpzRwEWJW6xqpkks3hFiH"
   },
   "90A9400452BE4AF1C80D8282CFF48A68F52DF382": {
     "logo": "QmTLtwtjyeW6aWJCoANK8RAjbP8pgNJdpnodv6Xe4TV1RS",
@@ -17168,7 +17346,8 @@
   },
   "93795CDDD24E1DA2B0A88C9A66BE500A23A991BD": {
     "logo": "QmeSi1iZzaFBhUn436tAFqKe8zmpMUpZW4ku7JpVVRdRwo",
-    "name": "Cars (Europe)"
+    "name": "Cars (Europe)",
+    "vid": "QmVLfVq7vcnobhsHsN5dVUFEscXpBvESaymysti79DUL4G"
   },
   "9380F1D7EE75E7C6EF24F1B76C88ECDC85088957": {
     "name": "Inazuma Eleven 3 - Sekai e no Chousen!! - The Ogre (Japan)"
@@ -17728,7 +17907,8 @@
   },
   "97C5963ADFC5F8E22082F68A11C1708F4A8A83FD": {
     "logo": "QmUKumTo6YKcTWoL7PVkqwH8UQfVqbhFbxhpUqxHdJEVU8",
-    "name": "Nanostray (Europe) (En,Fr,De)"
+    "name": "Nanostray (Europe) (En,Fr,De)",
+    "vid": "QmRnWtW1Xqoq2gvvNYneaCQv57Jh56WaNEcNvRTgYHMUTZ"
   },
   "97C7FBAEB9C22B9B588869C6A7518C7940E17AB8": {
     "logo": "Qma2KxtUpZmRpZ1xEUPVD4xExeERivc5Xs1VXU82GdibkW",
@@ -18154,6 +18334,9 @@
     "logo": "QmbqjMDMjnLLmjdgKNTJgsGwZVd3QfLQP3DnPBgrvyFL4G",
     "name": "WALL-E (Europe)"
   },
+  "9B8AF6BD3D46A19EE6D25087E968A80C898B506C": {
+    "ref": "174ED85E8035D4B3B1DEA1B4283AFCC3A9095744"
+  },
   "9B8DCA5023838CFDD274E336BB633FD7FE718E20": {
     "logo": "QmS8vvgxJVjfxzM7bkpLeK3SPmuQq15hkzFRHqCEjpVgom",
     "name": "Take a Break's Puzzle Bonanza (Europe)",
@@ -18191,7 +18374,8 @@
   },
   "9C0DB52B0C70C3E159DA161BE9ECC216D2642953": {
     "logo": "Qmcogx5meeQqCjCHM7oNqMFHXMSmjXvyRYRWe3rDUFuyEd",
-    "name": "Yoshi Touch & Go (Europe) (En,Fr,De,Es,It)"
+    "name": "Yoshi Touch & Go (Europe) (En,Fr,De,Es,It)",
+    "vid": "QmRHAG3x29Jxs1hasfFpb82TqDdoC6hEKHcA97px8qma1n"
   },
   "9C16A07C952A656D1D042CADB78CFAC8D631586D": {
     "logo": "Qmbjhw17qrFnkfmzHfQq4cGrD2fqCXWTzfUTHEmJPZXbHk",
@@ -18230,7 +18414,8 @@
   },
   "9C748EBE2CF825B2CB525E94389BD6F35471717B": {
     "logo": "QmNUF8VYJrxmVjEu8wBRsqKFuSrJqwxRAzuaK2g5A5eq58",
-    "name": "Fantasy Aquarium by DS (Europe) (En,Fr,De,Es,It)"
+    "name": "Fantasy Aquarium by DS (Europe) (En,Fr,De,Es,It)",
+    "vid": "QmRkvaLkjxoKUuqfvV3bQUrqYK5bsjojsvAqgSjdDjDePK"
   },
   "9C77F31882510596013B01C31D9E71FDFD77D473": {
     "logo": "Qmdnd13kAc8M5Pu5hSRQkh5BPqJGAdZYM1WddAk6zYzboj",
@@ -18938,6 +19123,9 @@
   "A2A4107885E90CB493229B1151A6A42AAA71923E": {
     "name": "Kakikomi Shiki - 'Hannya Shingyou' Renshuuchou DS (Japan)"
   },
+  "A2ADE0C5398E65AE856E55D184991BF551C7C3F8": {
+    "ref": "26AD0B9967AA279C4A266EE69F52B9B2332399A5"
+  },
   "A2B4925CFB69A38EAE90D4798C9AEE3365EA72AD": {
     "name": "Hakuouki - Zuisouroku DS (Japan)"
   },
@@ -19060,6 +19248,9 @@
     "logo": "QmU6kFMQgyUcLh7KG94KK27otLuKKbzrgZeYmEgus6i4YN",
     "name": "My English Coach (Europe) (Fr,De,Es,It) [b]"
   },
+  "A3F6A0C5CC429290C42823E540A167F6026ABB4E": {
+    "ref": "2BAD1A53C17DCFEA77E199E7C893668ED720D39A"
+  },
   "A3F94D321BBFB762BBDC3824DBCBBCFFA1EAD733": {
     "logo": "QmYzpwBemvdCV3FkYXzkEELFVfeJhkckXx35UZnu7bSh4n",
     "name": "Pictionary (USA) (En,Fr,Es) (NDSi Enhanced)",
@@ -19109,7 +19300,8 @@
   },
   "A46233D8B79A69EA87AA295A0EFAD5237D02841E": {
     "logo": "QmVHg4nd9gYuJX9uqcCKWMBqyr28Su3eomketXgzd9SdwH",
-    "name": "Pokemon - Diamond Version (USA) (Rev 5)"
+    "name": "Pokemon - Diamond Version (USA) (Rev 5)",
+    "vid": "QmSjvXkyvKpXVdJgvtRr4gVYip9AGjzKeAGceZ8nKTuFck"
   },
   "A463E7BD96BCAB2184683AD1D2007A3BC005BD4E": {
     "logo": "QmTfNUU9uU1J5fACSKFiidkBmpmrj99TJRo3FYFSycrN4M",
@@ -19314,7 +19506,8 @@
   },
   "A60DA5B8B7504505483732640B38A76F928B8C91": {
     "logo": "QmZd8UFDuEc2m1R9gcr9AmR5SmqzfiqwKteVJg2cTo2zjj",
-    "name": "Tony Hawk's Downhill Jam (Europe) (En,Fr,De,Es,It)"
+    "name": "Tony Hawk's Downhill Jam (Europe) (En,Fr,De,Es,It)",
+    "vid": "QmYt6HtBRso9gwEGfrFxZXWrxr7xNWq7NUTsyCdPN4QNPH"
   },
   "A61036C506E8E4BB11C466BB809AB60023D645C8": {
     "name": "Kaibou Seirigaku DS - Touch de Hirogaru! Jintai no Kouzou to Kinou (Japan)"
@@ -20586,7 +20779,8 @@
   },
   "B0BC1631CB3747D09C4ADA374B8B64B73B72E3B0": {
     "logo": "QmfMDXLgRnQ3pk1x5TpGkptu1WMWYSo6AskDUnbu24quCh",
-    "name": "Teenage Mutant Ninja Turtles 3 - Mutant Nightmare (Europe) (En,Fr,De,Es,It)"
+    "name": "Teenage Mutant Ninja Turtles 3 - Mutant Nightmare (Europe) (En,Fr,De,Es,It)",
+    "vid": "Qmchr9rYBEtByKRaBK6ZZbN7z9dc6VjudRqyjqef7Xbnax"
   },
   "B0C77B35520036BCE9D4B7DBB43E8B2615FAABAE": {
     "name": "Motto Hayaku! Seikaku ni! - Kazu Sense, Keisanryoku Up Training - Suutore (Japan)"
@@ -21088,6 +21282,10 @@
     "name": "Safecracker - The Ultimate Puzzle Challenge! (USA) (En,Fr,Es)",
     "vid": "QmTrkcPEEguUf1Wt6cGTNi9HyXaquSqh4bThCacAJ5mXhh"
   },
+  "B53BFE7B1328CE2DE09710BD2B47C5017EE3FEDE": {
+    "ref": "577467BB9C54A92AA25B6B7E757EAE71740ED196",
+    "vid": "QmYo6oQCaXJm7GRXXZySQfq22W9D2zM1BKt9iXhS8ajotT"
+  },
   "B542AA31B20436D3BDC665A552A181262B2B49D3": {
     "logo": "QmZgSSp42aQtXheyeMKLGxyGKKThSZXq7P913hFS5dMHvo",
     "name": "Cars 2 (Japan) (NDSi Enhanced)"
@@ -21113,6 +21311,9 @@
     "logo": "QmeVL9CQAbugcRNjdBxPL1fpGmiLEXZWFNk378CnMqMVeg",
     "name": "Jewel Match (USA) (En,Fr)",
     "vid": "QmQG1mAmXfzhRU837134A4zDuBvSZ53Y1WPzNWgTP241qB"
+  },
+  "B593D15CDBC540F7CD6EBCAE68836CC7F21F5607": {
+    "ref": "B5D8EBBC8813DB68270EA02F0E581F6005F54736"
   },
   "B59B7A826D00A9650C08D8C16055CE9D56C27EB8": {
     "logo": "QmW86PczBWoseC77S87JxoZE3YBQzNwu552e3gF8e2owVx",
@@ -21507,7 +21708,8 @@
   },
   "B8D2496BDBD35FC5D407D28BA7720C4638444217": {
     "logo": "Qma6Nx2i37hpiM8judNyRPUenb8ySbVJZrnWW4aPYppKzi",
-    "name": "Chessmaster - The Art of Learning (Europe) (En,Fr,De,Es,It,Nl)"
+    "name": "Chessmaster - The Art of Learning (Europe) (En,Fr,De,Es,It,Nl)",
+    "vid": "QmSzxrhqiEdfdEPy7neEt37Rp547vKk45upcQ3YVSzQcoe"
   },
   "B8E0C8CB81AE4170056D3BCA6F534DA043816570": {
     "name": "ALC no 10-punkan Eigo Master - Shokyuu (Japan) (Rev 1)"
@@ -21971,6 +22173,9 @@
     "name": "Brave (USA) (En,Fr,Es)",
     "vid": "QmXJ7Stnrn5Zys3T2dtymDm7LcYfC5X1m2BoAgNGQfgUj4"
   },
+  "BC6740968AC1346265163CC3C9EA6A360EFE292D": {
+    "ref": "44DEA05A632591739BD2BBEF34EE846A287C4E2C"
+  },
   "BC696A0DFB448C7B3A8A206F0F8214411A039208": {
     "logo": "QmQodnM5MFRbEZqHzjs9FRzYFeN6PgaKiV9qBx3HqFie8v",
     "name": "Pokemon - White Version (USA, Europe) (NDSi Enhanced)",
@@ -22115,6 +22320,9 @@
   },
   "BD62D4771FBE4043F4225B25D33FC58B1524B750": {
     "ref": "0BEC02A27800DA1194A48BC92E35DE8EDEE02AEE"
+  },
+  "BD696021EE6D7B6BD857F34F133D518B40036F52": {
+    "ref": "D06F77EF716044F17B1BE49732356E2D60836CFF"
   },
   "BD7588BF9102BCF63C035ECFE4F3B11008C11D12": {
     "logo": "QmY4w1zKe2otdwAUx48SKptWJFbfnNeEH6FHjHSVnjEzLM",
@@ -22327,7 +22535,8 @@
     "name": "Kaijuu Busters (Japan) (Rev 1)"
   },
   "BF5E467FC19CDF951BC569E2CFC2233E0C85A9AB": {
-    "ref": "4C016821AC01387C3B7331F7EB5BFC380DFBC0D9"
+    "ref": "4C016821AC01387C3B7331F7EB5BFC380DFBC0D9",
+    "vid": "QmTXojFeHPJQ9BGS8EsjqnF1PJEaP1pqb33NNzXusn6qR6"
   },
   "BF66158BC71353705998AD73EF091A5CEA5A756D": {
     "logo": "QmcjbSp5TDUKewUe8UgGdSfkLcit4KbKcYtLZWLBCxiqGo",
@@ -22402,7 +22611,8 @@
   },
   "BFEA6980C2698E7BDB1566F070830F9383ECF005": {
     "logo": "QmW7HDPrzqTJEpDEPZMXaZqNXUxXQt8sWYvuZ3WQC42a8g",
-    "name": "Pac-Pix (Europe) (En,Fr,De,Es,It)"
+    "name": "Pac-Pix (Europe) (En,Fr,De,Es,It)",
+    "vid": "QmXxRQPLr5Aijbci5evLFmLVYCBJ4nTqSbsw7ocXrNYW9Q"
   },
   "BFF31EEFE0829174C9B6C6B5AE4ECB565B67DDD8": {
     "name": "Petz - My Monkey Family (Europe) (En,Fr,De,Es,It,Nl,Sv,No,Da)"
@@ -22430,7 +22640,8 @@
   },
   "C021D77090EBBD882805BF519BBF4F7FD1934D41": {
     "logo": "QmWPdVbcJFR4jdVTU5DSXrok4PLTeAve7Jw3GrLcj3aBZj",
-    "name": "WarioWare - Touched! (Europe) (En,Fr,De,Es,It)"
+    "name": "WarioWare - Touched! (Europe) (En,Fr,De,Es,It)",
+    "vid": "QmPSF32M1tiDUUCrPrAphLVeWhqqLU9GeRLthwTnW1bzT2"
   },
   "C024CE8ADC276DFDAED48BF3396C152853FA6B34": {
     "logo": "QmdgZSTwSbv7Kymk3LpHhmrdaq2CFMRd9uCfA9iZsZK8TC",
@@ -22513,7 +22724,8 @@
   },
   "C0E1517494479F53CCFEEBFD84A247B0150A8B63": {
     "logo": "QmQ1ZSuWaqvWZgDBJmHEiGAp7rYBpLkKvdPST35AoV2BCX",
-    "name": "SBK - Snowboard Kids (Europe) (En,Fr,De)"
+    "name": "SBK - Snowboard Kids (Europe) (En,Fr,De)",
+    "vid": "QmX8zrDFEVnRHmCih7khh75zRyxy6KfHar2wqP4T7H45zC"
   },
   "C0EA72D72DF3200DEA38669EF41029A49A25F04E": {
     "logo": "QmaXPes9WmWtjSRFmfTY8xCxhcRcD1GuGzLo7sxRRWbpBK",
@@ -22719,7 +22931,8 @@
   },
   "C28548E8ACA4228B0A9979FE41F56A75AFB21DC0": {
     "logo": "QmZ5AXX1bx1kyuxAL6wkhLMNpzCNvzSYZrbLpYLJS6Xhpw",
-    "name": "Star Wars - Episode III - Revenge of the Sith (Europe) (En,Fr,De,Es,It,Nl)"
+    "name": "Star Wars - Episode III - Revenge of the Sith (Europe) (En,Fr,De,Es,It,Nl)",
+    "vid": "QmQigHyohwQh8e4Ph2cxJZqf6EA8ofqBwXc8ysnVCn8bka"
   },
   "C285D953267C9BD660E39524EED81A3A2D98694D": {
     "logo": "QmUoEVqJ9Z5qdhCmrTXBeUjcjGxULjLmEJpCVdHQu4xvmg",
@@ -22797,6 +23010,10 @@
   "C2DC065EC20360783CEB76DF0D0A0AA7754D5397": {
     "name": "Minna de Asobou - Shanghai DS 2 (Japan)"
   },
+  "C2E9A393C167F084BB48D6B6DB8015A3124EF7A7": {
+    "ref": "886836D0F2A852C6B87CF021149C3BA66BB4A58F",
+    "vid": "QmREdfStkwexxp8RRRUp35G2HJXJXkV44kgV2EZmpotvAD"
+  },
   "C300FE82AE4039CC05C2EA3E872272524089DBAE": {
     "logo": "QmaxeGmqnD2zAchMKUsYFT8QRENLHf18VT7qTzqNRQJvbY",
     "name": "Yu-Gi-Oh! Duel Monsters - World Championship 2007 (Japan) (En,Ja,Fr,De,Es,It)"
@@ -22811,7 +23028,9 @@
     "name": "Jewel Quest - Mysteries - 2 Tolle Wimmelbild-Abenteuer (Germany)"
   },
   "C308946D0E1844C925121DBAAF9B7E28EF294314": {
-    "ref": "29645E44B0F2AB2CD89CE9A99C4A50D95C35D223"
+    "logo": "QmPQaYeC9rP7RySBR2oSgBanvwF85rxCVFik7DA5bHSKMZ",
+    "ref": "29645E44B0F2AB2CD89CE9A99C4A50D95C35D223",
+    "vid": "QmcxDKF4Krq4gCmkvaKPsNukNA5TUJVqFugZTrqwJCr9YS"
   },
   "C310810E9B31979156E20AFA4AD01BC60314E1C1": {
     "logo": "QmeYvJFvY1QQpjfr6m7SzakqmyhmFLjfe81sWftkH1zV6i",
@@ -22952,7 +23171,8 @@
   },
   "C492AC637D8EDF569C15C61847D603AAFDEBD1D1": {
     "logo": "QmTy4gY1n2z12UuKiQ1VwTzh6BUQZsvWHmJVwjfU2jfMnT",
-    "name": "Ford Racing 3 (Europe) (En,Fr,De,Es,It)"
+    "name": "Ford Racing 3 (Europe) (En,Fr,De,Es,It)",
+    "vid": "QmVpVpfEZdWETa96NEEHjvMDHywQ2HuFgAavdR5DJmrURe"
   },
   "C4938675BFE866DDB97E609C2530CC5EBCEFA23A": {
     "logo": "QmY4xLzKQ6mX2Z1XswgYhu948Npa7oAkiHPbgEzZUTkCEQ",
@@ -23013,6 +23233,11 @@
   "C4F99E3CD90E412B893AF1C91853934EB02C8E9B": {
     "logo": "QmZgSSp42aQtXheyeMKLGxyGKKThSZXq7P913hFS5dMHvo",
     "name": "Cars 2 (Europe) (Fr,De,It) (NDSi Enhanced)"
+  },
+  "C5072BF51A5ECC51ADE99D3506C023F5BAC3EEB3": {
+    "logo": "QmShWDw9rMN1p1hmtKx5VZqU792Sz9szB5FvJuosGbHLSG",
+    "ref": "CE81046EDA7D232513069519CB2085349896DEC7",
+    "vid": "QmTqHNZX72G8bAbNygjeUmKRNAfHXj7uhg56DZgQN5Xk1d"
   },
   "C5112087337D762537B01E55633B68462723AD29": {
     "name": "Dragon Zakura DS (Japan)"
@@ -23369,6 +23594,9 @@
     "name": "Cake Mania 3 (USA)",
     "vid": "QmVDC39Zwfdc7RwXTxA4uzqYF7FFtqH1jJYFWt6yVPVxJf"
   },
+  "C8068B616B0D30DF887F22FF442E52227FFD550E": {
+    "ref": "D0906AB6E11DD928D9F109A2077205DCD7519A90"
+  },
   "C80B67DE36DE44EA2FF1F82C9A2FF25DC027DE6C": {
     "name": "Pictionary (USA) (Beta) (NDSi Enhanced)",
     "vid": "QmQ1xZSFk6Aa7nr8wMVWAy8MfEkyN9A8wvaZDAadGunURp"
@@ -23485,7 +23713,8 @@
   },
   "C8F9A5CA9FED851433FC0C47C54799AD1C2FFC21": {
     "logo": "QmNwYC7zi2h1ErREVD1S74fQ73yBQZX9a2fcQ7MdZHTdpV",
-    "name": "Monopoly (Europe) (En,Fr,De)"
+    "name": "Monopoly (Europe) (En,Fr,De)",
+    "vid": "QmdeDnLYGX4ZADr5k8ACfUqmruNzuSbLYNAaqrNuR9PzEa"
   },
   "C90F31CDD26B3E1F6AC5C00600DA72135388B877": {
     "logo": "QmeBESffnJ7hjTEoyRSHg82D3DCoBaw4ucEe4Y2taHz6sA",
@@ -24024,11 +24253,13 @@
   },
   "CDD8FAF812F7EEF44B205966F042DCD8A15FA438": {
     "logo": "QmWvN7g8xs5R4nnTVq2FK4w3MHYBuAFSbrDfDdbPCxotGX",
-    "name": "Tak - The Great Juju Challenge (Europe) (En,Fr,De,Nl)"
+    "name": "Tak - The Great Juju Challenge (Europe) (En,Fr,De,Nl)",
+    "vid": "QmWagHFf6tQrrafnqv4x2G6HkrWPCT3DX1hwxJP8SFDBs6"
   },
   "CDE075BD20852D54C9F3DB0C5204B5D1F73DDD88": {
     "logo": "QmNV4vuK1J9bfTkCsZqhDHAvamAaDqKqALccWnUov3AK5z",
-    "name": "Monster Trucks DS (Europe) (En,Fr,De)"
+    "name": "Monster Trucks DS (Europe) (En,Fr,De)",
+    "vid": "QmURhcHVZ6ZrXu8sdrJGU9qkjXgPsgELMbNEFXn7Hsb9bc"
   },
   "CDE084E5F28192DA8797AC56CDF502FF5C5484E0": {
     "name": "Marie & Gali no Let's Science (Japan)"
@@ -24071,7 +24302,8 @@
   },
   "CE197058CFA43D3CFE573BBC3F56A7CCD1DDFB27": {
     "logo": "QmeABUq6snQjcAwpr2pCoj73S5gm8q9GA9pqQGQR18kJ3x",
-    "name": "Peter Jackson's King Kong - The Official Game of the Movie (Europe) (En,Fr,De,Es,It,Nl,Sv,No,Da,Fi) (Rev 1)"
+    "name": "Peter Jackson's King Kong - The Official Game of the Movie (Europe) (En,Fr,De,Es,It,Nl,Sv,No,Da,Fi) (Rev 1)",
+    "vid": "QmWPKPKxZfM2sngq1T9wwpJtyBbZnNf366yChRMSz2i4H3"
   },
   "CE2595EBA1E23EACB37056598319619F81AEFC29": {
     "logo": "QmVHg4nd9gYuJX9uqcCKWMBqyr28Su3eomketXgzd9SdwH",
@@ -24084,6 +24316,10 @@
   "CE3C7E51AEB9EDF5DFF4B692D020D306ECE3C0D5": {
     "logo": "QmYghRd9kxgMwfEdcPJZq2qLBK1JomzHnqCHgbcs5f6vcE",
     "name": "Rune Factory - Shin Bokujou Monogatari (Japan)"
+  },
+  "CE5866A01CD56C9BFFF95BBB4E564B1523DDD5AA": {
+    "logo": "QmNp2jiu3VbxVc7eeymD2Hg48rBoQYxbjySzoueNY4fLRA",
+    "ref": "E94413F0AC06E21270F52845AC8E07A21FFD08BA"
   },
   "CE663DF1DCA596753711E783B4B03EF6081A126B": {
     "name": "Anpanman to Asobo - Aiueo Kyoushitsu (Japan) (Rev 1)"
@@ -24190,7 +24426,8 @@
   },
   "CF30A666D0C5CD53F5148A8676712AAFD9DA1523": {
     "logo": "QmTTPqz3nVPMu1tCxWKUzzysuM2cPVeMhFMpm84NMQgVsC",
-    "name": "Lost in Blue (Europe) (En,Fr,De,Es,It)"
+    "name": "Lost in Blue (Europe) (En,Fr,De,Es,It)",
+    "vid": "QmcCxf8vE6vLktAjHVhVNXMZjgEwYCZXbKx1Y3hqGrhPbX"
   },
   "CF32BE2A86F86D2FB4C503F3BF8F328F5D61DFFA": {
     "logo": "QmUzNBHMkE6KHBSQk5ovKhX7XiqeHpmLW538VV2goi4S7w",
@@ -24403,7 +24640,9 @@
     "name": "ZhuZhu Pets Featuring The Wild Bunch (Europe) (En,Fr,De,Es,It) (NDSi Enhanced)"
   },
   "D11241581D269080342E1BD6466D443724D1AEC2": {
-    "name": "Okamiden (Europe)"
+    "logo": "QmWNZeeJCCSLezWBESzxttxK9VuJXq1FFL6w3znVHcRcba",
+    "name": "Okamiden (Europe)",
+    "vid": "QmZxt6zaeRV5TQyVTQmf9zBwoaVCWV9Xm2Qhm4RKyu5M6e"
   },
   "D1141454D760C3E986913DB0F49FCAC33EC637B4": {
     "logo": "Qmb5MafmfXQGAKRmscJRhBFjNPwakrj49zQJzvSvZbMSSZ",
@@ -24812,6 +25051,7 @@
     "vid": "QmVwqMXT1LL4YyvQXFC4Y81dmnKUsrmKYEkzJVV2JtUNDt"
   },
   "D4ADB4EBA8403822FDF4DC5364242C5AE5B10089": {
+    "logo": "QmWPjTbTETzrXyYunCRfAkTK7GqxMTKP2WiChTcq2MCBjD",
     "ref": "9DE6A88E95D7BE4AAE7E7953A9980A92D17C36C3"
   },
   "D4AED2CDCBAFA07F8BC2740F62A04CD9D0665A97": {
@@ -25003,11 +25243,13 @@
   },
   "D6CB2FA8FCF526ECC20E20CFAF9F1924DC5B3A12": {
     "logo": "QmSkUXsPDXVKJKfFQVEWBfPimCkwvnMADn9n6X7baGmooB",
-    "name": "Murder in Venice (Europe) (En,Fr,De,Es,It,Nl)"
+    "name": "Murder in Venice (Europe) (En,Fr,De,Es,It,Nl)",
+    "vid": "QmNahFxrrhGkWtSGTVNTQBwy8FKjvtPy3h3HCfosUkxRsD"
   },
   "D6D56ED0788BB8D2FFF010E4F8D19B4506C242C1": {
     "logo": "Qmb5MafmfXQGAKRmscJRhBFjNPwakrj49zQJzvSvZbMSSZ",
-    "name": "Goosebumps HorrorLand (Europe)"
+    "name": "Goosebumps HorrorLand (Europe)",
+    "vid": "QmZZCoPgc3uQJQbJPdtMkNd7gjBYN1Goq2kMn5hJYBSYM1"
   },
   "D6D62F351E16AC82E3F8AEB696782F9665B18F2D": {
     "name": "Super Robot Taisen OG Saga - Masou Kishin - The Lord of Elemental (Japan)"
@@ -25173,7 +25415,8 @@
   },
   "D7CF75DB882EA887E355BA95181CC27451E90312": {
     "logo": "Qmdw1hdoVz24XdiZJNMcbZxbZv8gUDvedrfmus5CYDnj7K",
-    "name": "Bubble Bobble Revolution (Europe) (En,Fr,De,Es,It)"
+    "name": "Bubble Bobble Revolution (Europe) (En,Fr,De,Es,It)",
+    "vid": "QmdnW2r36ut1CmiTfnh3FfVWYxSmqME6ng6MGdwvh8mg3V"
   },
   "D7EED9C60CE605A1C3545A4609FB5CF7ED3C10AD": {
     "name": "Yatterman DS 2 - Bikkuri Dokkiri Animal Daibouken (Japan)"
@@ -25282,6 +25525,12 @@
   },
   "D8B42E29AE3428D82686B55B2FC8DE6298F2B547": {
     "name": "Keitai Sousakan 7 DS - Buddy Sequence (Japan)"
+  },
+  "D8C44B9D7FCD30236B91E152B6C71ED9E5C4E04D": {
+    "ref": "F56D9611F0E010EECC1A2E88F1D6173F880EF2DC"
+  },
+  "D8C8DCCDAB808C494005F86C72D8B240B3D7134F": {
+    "ref": "43231E78D70B00F5079BAFC6E22BCDA8A9D13EBF"
   },
   "D8D7430AFC5E529EC812344EE0C2700B2CFB0AFF": {
     "logo": "QmaYUcztNZUwiZh8GQ8ZBNMksZucjdVVjQUwcYYxToYPJX",
@@ -25757,7 +26006,8 @@
   },
   "DC4174390CB2C62C22F7B7C6EBF344AD5AA8A789": {
     "logo": "QmcixuE8UhnGZsZtbBeQypNhJYF8fc4JuUJvGZBavsVfV8",
-    "name": "Lara Croft Tomb Raider - Legend (USA) (En,Fr,De,Es,It)"
+    "name": "Lara Croft Tomb Raider - Legend (USA) (En,Fr,De,Es,It)",
+    "vid": "QmWka48TcPKzbhacgsxoMLC3xAnWzWWPAQrSrFv1fF6BFy"
   },
   "DC4257A69D771E9AB9EC3694B10E51B81233C957": {
     "name": "Live-On Card Live-R DS (Korea)"
@@ -25874,7 +26124,8 @@
   },
   "DD2841E98B0301831C617E401D8400F7ADC394B0": {
     "logo": "QmfQKJXgTrUaoBHb83Xmx6uZx3e1YbCWiFeKxhtayGgNwT",
-    "name": "Professor Layton and the Curious Village (USA, Australia)"
+    "name": "Professor Layton and the Curious Village (USA, Australia)",
+    "vid": "QmTBF1gGQ9KteUMmeDNKzYJMd9cwDMPrmwJw4xK1PuYYZC"
   },
   "DD2EE9769FD322DEA09726003B0E6798D878A7BA": {
     "logo": "QmctztAuqSrX88q57BzEAWavkyEf8EqV9fgHVrYGufcMqz",
@@ -26169,7 +26420,8 @@
   },
   "E00522843E746F62741E32D23E09B02740A0524D": {
     "logo": "QmX58NB1pmpq4TNBFEnSePWXb8H17QHrFRZnFwAYMpGKQs",
-    "name": "Zoo Tycoon DS (Europe) (En,Fr)"
+    "name": "Zoo Tycoon DS (Europe) (En,Fr)",
+    "vid": "QmPtaS4uqhzVt2ZpWF496ZwwZavneNNfhNHnfzhkAzVF5f"
   },
   "E0074B1E9D2415D77832CBD8330B8CB100D8ED73": {
     "name": "Grand Theft Auto - Chinatown Wars (Japan)",
@@ -26336,7 +26588,8 @@
   },
   "E1490523C1B4F5E0A48B7E1F243873F9D6496D50": {
     "logo": "QmQCCK6ZndEu2NEnHPU22j92mw7eF44pksaeSG4QizRxjg",
-    "name": "Chronicles of Narnia, The - The Lion, the Witch and the Wardrobe (Europe) (En,De,Sv,Da)"
+    "name": "Chronicles of Narnia, The - The Lion, the Witch and the Wardrobe (Europe) (En,De,Sv,Da)",
+    "vid": "Qmc8tLfap4eu3X4R21SJ9R739pfbjiaruUSABeasq1Bsz1"
   },
   "E14AF640BBA85EC02DFA9409CB17887F92DA099F": {
     "name": "Kanbayashi Shiki Nouryoku Kaihatsu Hou - Unou Kids DS (Japan) (Rev 1)"
@@ -26368,6 +26621,9 @@
   "E19D4B6A2456FA3C7C03881FF6464E50F10D16D4": {
     "logo": "QmNxKZtY2TGtRgjTb5VEgWBrc6fNf3gETEL5Z5VHkSp3uR",
     "name": "Call of Duty - Modern Warfare - Mobilized (Spain)"
+  },
+  "E19E102391A74A4677284C23B71DDA53B9C9608F": {
+    "ref": "D84DEF84F418B2CE16BC7EF0C36E830E558D4757"
   },
   "E1A4BC1A9C73329A66EE0BCAEFE2ED5426D79E04": {
     "logo": "QmbRE6KtU9J2kBAYXq4a5cJnuZK6Pjk98yMjZmxrYk723X",
@@ -26401,6 +26657,9 @@
   "E1ED145C2AD4336E9A13BAA695BCAB5E25745CC4": {
     "logo": "QmbcidG3wo3BCwrk5cR92CC2rjrKVQHHveuC65PikqXAa1",
     "name": "Bokujou Monogatari - Colobockle Station (Japan)"
+  },
+  "E1F88FFE3005C1F8F5A398360323FBF4365DD2A7": {
+    "ref": "4B9A111AEDEE733B1FFA6D7E44B23F02CB0D730E"
   },
   "E1F8A0A88CD4BFE50CD4AC7D4A79F2D70DF47F42": {
     "logo": "QmXRnPMJGcag3vvSs1NTQrZUvicNy4fY8PsXipcvPniJSc",
@@ -26453,7 +26712,8 @@
   },
   "E28CA1DB51AB95274343966438D3BB2852D04308": {
     "logo": "QmesXmbg7E4JUa43NPWD2bpGFbeMnBmfsoV7YiFwH6PMw8",
-    "name": "Picross 3D (Europe) (En,Fr,De,Es,It)"
+    "name": "Picross 3D (Europe) (En,Fr,De,Es,It)",
+    "vid": "QmdH5jg1rmzKMkmGbc2hY8gktVutTNVgt7kX1EphorxkEs"
   },
   "E29A929BEB5ED90180AADBC610C638B1E9C1BA42": {
     "logo": "QmfB97Q9jKFDPYokmg59t18uZdygoBaNMrDQowoYoS2cfd",
@@ -26616,6 +26876,9 @@
   "E414C26DB42A7405C0C50898D29C7E4C4E8D042E": {
     "logo": "QmUjyo3Fxf1rGdZJkbVA35ECmuy5pXpfaqkKJxeby5oR6D",
     "name": "Sonic Colours (Europe) (En,Ja,Fr,De,Es,It)"
+  },
+  "E416CE78BDDBBDAE2E8FD5BA4C8B0CF8E452B7D4": {
+    "ref": "16742F563B778F55632B2ED76EE88DF5DC28B148"
   },
   "E41DCD59AEE0446A7B14A80CB76CE61AA1A66A49": {
     "logo": "QmVFijxjkt2d25qzWaeHuDQaqEfPv4px1shr32NQsxGkDR",
@@ -26920,7 +27183,8 @@
   },
   "E6C5FF9F6ECF2C25597330C4835339ACB5D05F62": {
     "logo": "QmYEShLtDjSFoJqDgLQSfWgdkQJBWzkxmMEk1KMENfprD3",
-    "name": "Big Brain Academy (Europe) (En,Fr,De,Es,It,Nl)"
+    "name": "Big Brain Academy (Europe) (En,Fr,De,Es,It,Nl)",
+    "vid": "QmNdGMLahk6AzB9ahY3vHoZfsMcT9cHyQhn1xFtRMozaVz"
   },
   "E6C84265BF54D7E4DFD46A5EEC350948E27910CC": {
     "logo": "QmUsNX5LHYXmdzxhUG9ccJJuDcsKgvs8Avxq2E1nDPWMLN",
@@ -27519,7 +27783,8 @@
   },
   "EB491DE49A43429CC4B75986A4F95AC769200147": {
     "logo": "QmfDvHyEfyaygurqaLLWsdr9GJpNY925XbhF38mGQcve8B",
-    "name": "Star Fox Command (Europe) (En,Fr,De,Es,It)"
+    "name": "Star Fox Command (Europe) (En,Fr,De,Es,It)",
+    "vid": "QmYzmxXt289zUDcezQgPQetdEGnL33P2vAgTbLAu4cjcY4"
   },
   "EB60712209A444C6C73FF835F8FA6D3232E5B93D": {
     "name": "Takahashi Shoten Kanshuu - Saihinshutsu! SPI Perfect Mondaishuu DS (Japan)"
@@ -27733,7 +27998,8 @@
   },
   "ED8C2085F049CD4FDB434E357B097FF673D05944": {
     "logo": "QmaRByxpYQFsNKXy5unyWq9w8GhtLpuGq2zNp4ZRAc6Nnp",
-    "name": "Asphalt - Urban GT (Europe) (En,Fr,De,Es,It)"
+    "name": "Asphalt - Urban GT (Europe) (En,Fr,De,Es,It)",
+    "vid": "Qmer7v3hFKaPYpUB4iPBJwhPksh8BLqBGoZodicXzHutGw"
   },
   "ED90BC6AF569DFD60A937FF715E36BFC9CDCAA8B": {
     "logo": "QmWd9XBbenHq7SRVbpXhiFJYf7imVkd9aehBoJTQxE6m2v",
@@ -27842,7 +28108,8 @@
   },
   "EEDCDE721FF79083CE640A7AC2AE1AED63A49584": {
     "logo": "QmXWXnQ1pe4ndhqXcn5nzoYZvgkqw73tqoxWqsG6m9opie",
-    "name": "Thrillville - Off the Rails (USA) (En,Fr,Es)"
+    "name": "Thrillville - Off the Rails (USA) (En,Fr,Es)",
+    "vid": "QmdQHM62Cw7mFMBg7ubbXfcTYwKXx8DNMK18wpibRAPPhr"
   },
   "EEE3A7CA2A9849282084D38CFCF34DC210832BB6": {
     "logo": "QmaYUcztNZUwiZh8GQ8ZBNMksZucjdVVjQUwcYYxToYPJX",
@@ -28072,7 +28339,8 @@
   },
   "F0E20179F35A3F7044F6F8ED7CFA02D51C6C1BBF": {
     "logo": "QmeNDwKRoYrenzn29DS3toZMCHCAqCeQhoTHJAoxYLpAwi",
-    "name": "Duke Nukem - Critical Mass (Europe) (En,Fr,De,Es,It)"
+    "name": "Duke Nukem - Critical Mass (Europe) (En,Fr,De,Es,It)",
+    "vid": "QmYNNA1ybtxwns6p7c6f6DswGMSWSReSbxc6utjQAasWKi"
   },
   "F0E715C4CCE509E638DFAE73BBF17B8C6A47F315": {
     "name": "Beyblade - Metal Fusion (USA) (En,Fr,Es) (Toys'R'Us Exclusive)"
@@ -28299,6 +28567,7 @@
     "name": "PowerQuiz - Allgemeinbildung (Germany)"
   },
   "F2742C5D617C891A05E75B8875D919D693F38EF2": {
+    "logo": "QmTVpx2ZSrbEeMwMnykibk1Sz3731xmrKSMtRWk3dxwgaU",
     "ref": "A1A49963A582BB8E8A82F0365334505ED503F828"
   },
   "F28529C7EF02290059B494AF85087BBF6C73B551": {
@@ -28521,6 +28790,10 @@
   },
   "F4638CFD2A2BFBCEDA5CDBA35F48AF929EF3A682": {
     "name": "Kanbayashi Shiki Nouryoku Kaihatsu Hou - Unou Kids DS (Japan)"
+  },
+  "F468FAC04FC48DDE9CF3C09B2F19A11ED5ABCEA9": {
+    "logo": "QmcjVGQtAGXtEu4opzcNXv5qDp2Dm36PrpzgVjqiCGpean",
+    "ref": "68ABCE46CD5B77A3B1BCF53D993CA59C03C87BEC"
   },
   "F4770147609B9524C4ADB33DD14417F220C1FF2F": {
     "logo": "QmXxS7ayeduvesKAWmYCsLSgSer3bNAFuqykE8UwuD1S4n",
@@ -29136,7 +29409,8 @@
   },
   "F9AD0F39D708D469BD981FB4C7321A81AE56993A": {
     "logo": "QmYLeNDQRvPtU69PQzpX6ZyAHn5Sa75tiLSiWnbCooiUNm",
-    "name": "X-Men - The Official Game (Europe) (En,Fr,Es,It)"
+    "name": "X-Men - The Official Game (Europe) (En,Fr,Es,It)",
+    "vid": "QmUYmXDs8TGXvkB76pFZ8NfF4k7y2W8KwPksiiaZje5o18"
   },
   "F9C35F5CB41A32A83C68BEABB369297245FBB131": {
     "name": "Kanji no Wataridori (Japan) (Rev 1)"
@@ -29500,6 +29774,9 @@
     "name": "Sonic Colors (USA) (En,Ja,Fr,De,Es,It)",
     "vid": "QmeunXwGwi7UV1p5MEUafVKtXCuCjKe9Mwp7kj4JUimeuJ"
   },
+  "FC7A27CE5B31086038D697C15D01352C21E9C60F": {
+    "ref": "336E09E8EAE878D4E4FB7BE7535AC905DD603AF6"
+  },
   "FC7BD9E8009BA832768876EC3729941C80565A55": {
     "logo": "QmYP73excfNt2UhRazwLrSDNY576gydKpTYkYBg1L21WYQ",
     "name": "Tenchu - Dark Shadow (Japan)"
@@ -29621,6 +29898,9 @@
   },
   "FD7694296A093A8620E11EADB2C5938CC13FA753": {
     "name": "Puyo Puyo!! - Puyopuyo 20th Anniversary (Japan)"
+  },
+  "FD862D0785E4D38F7F5BC88516072C9D6FE10CB9": {
+    "ref": "222778A3D93B067F52F45452BD293C53A5193987"
   },
   "FD881F4D60153064FD9412B8EEB6A397D6353B3E": {
     "logo": "QmSaAevkdtQtwES6z3wmx4dN7z4Dz4jpCHMwNwXLnSiqWm",
@@ -29786,6 +30066,9 @@
     "logo": "Qmc6GWsfr5FQXxEpsajhdCwfshJECVqZF6LmAZvazGe6fB",
     "name": "An M. Night Shyamalan Film - The Last Airbender (Europe) (En,Fr,De,Es,It) (NDSi Enhanced)"
   },
+  "FF1D3F5439921960DAB8E22A806E3D7CB9A6A72B": {
+    "ref": "FB3F2F8D9FB5441DEAEA31B70134C598BFF0DD25"
+  },
   "FF2917DA2942B4CFBB316B4B0E0B29A247E3F119": {
     "name": "Sangokushi DS 2 (Japan)"
   },
@@ -29814,7 +30097,8 @@
   },
   "FF513D393752833A913D29665F594430483DA856": {
     "logo": "QmSpyBaPEaJxvCuDsyFgXQETcbCfc88Lr5F2Ha8eaxR8v3",
-    "name": "Scooby-Doo! - Unmasked (Europe) (En,Fr,Es,It)"
+    "name": "Scooby-Doo! - Unmasked (Europe) (En,Fr,Es,It)",
+    "vid": "QmWA1tSZ9AqM7gen8VkXuwyXRyDmJLGpXoe8rYNbUYmtgL"
   },
   "FF662138B71543E590AEED0E231D2878997F1341": {
     "name": "Strike Witches - Soukuu no Dengekisen - Shin Taichou Funtou Suru! (Japan)"

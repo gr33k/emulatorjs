@@ -29,7 +29,7 @@ if (fs.existsSync('/data')) {
 var configPath = dataRoot + 'config/';
 var hashPath = dataRoot + 'hashes/';
 var metaPath = dataRoot + 'metadata/';
-var defaultPeer = '/ip4/206.189.169.226/tcp/4001/p2p/12D3KooWHRqeK6as7tbuoaQdoTUNayUQzfY5aUtTa9GpYzdWNPqU';
+var defaultPeer = '/ip4/65.109.29.184/tcp/4001/p2p/12D3KooWAQZgCmhRo6V6yzGWTtw57xSRBnTn5kGMqzahFKyt5CW3';
 var metaVariables = [
   ['vid', 'videos', '.mp4'],
   ['logo', 'logos', '.png'],
@@ -222,7 +222,7 @@ io.on('connection', async function (socket) {
     let writeStream = fs.createWriteStream(file);
     socket.emit('modaldata', 'Downloading: ' + file);
     try {
-      for await (var fileStream of ipfs.cat(cid, {'timeout': 10000})) {
+      for await (var fileStream of ipfs.cat(cid, {'timeout': 20000})) {
         writeStream.write(fileStream);
       };
       writeStream.end();
@@ -689,6 +689,9 @@ io.on('connection', async function (socket) {
     }
     let fileExtension = path.extname(file);
     let name = path.basename(file, fileExtension);
+    if (! fs.existsSync(dataRoot + dir + filePath)) {
+      await fsw.mkdir(dataRoot + dir + filePath);
+    }
     await fsw.writeFile(dataRoot + dir + filePath + name + extension, fileData);
     // Render game for client
     getRomData([dir, file]);
