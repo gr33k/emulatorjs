@@ -15,12 +15,8 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - { era: '1980s', slug: '1980_game_watch', title: 'File:Nintendo-game-and-watch-wide-screen.jpg' }
-          - { era: '1980s', slug: '1981_ibm_pc', title: 'File:Ibm pc 5150.jpg' }
-          - { era: '1990s', slug: '1991_cdi', title: 'File:Philips-CDi-400-Console-Set.png' }
-          - { era: '1990s', slug: '1993_jaguar', title: 'File:Atari-Jaguar-Console-Set.png' }
-          - { era: '1990s', slug: '1994_playstation', title: 'File:PlayStation SCPH 1000 with Controller.png' }
-          - { era: '1990s', slug: '1999_wonderswan', title: 'File:Bandai wonderswan consoles.jpg' }
+          - { era: '1980s', slug: '1985_msx2', title: 'File:Philips VG-8235 MSX2.jpg' }
+          - { era: '1980s', slug: '1988_pc_engine_cd', title: 'File:NEC-TurboGrafx-16-CD-FL.png' }
     runs-on: ubuntu-latest
     timeout-minutes: 6
     steps:
@@ -39,36 +35,28 @@ jobs:
           import json, os, urllib.parse, urllib.request
           from pathlib import Path
           era, slug, title = os.environ['ERA'], os.environ['SLUG'], os.environ['TITLE']
-          headers = {'User-Agent': f'EmuHubExactHardware/1.0-{slug} (editorial preservation project)'}
+          headers = {'User-Agent': f'EmuHubExactHardware/1.1-{slug} (editorial preservation project)'}
           def get(url):
             req = urllib.request.Request(url, headers=headers)
             with urllib.request.urlopen(req, timeout=90) as response:
               return response.read()
-          params = {
-            'action': 'query', 'format': 'json', 'formatversion': '2',
-            'prop': 'imageinfo', 'iiprop': 'url|mime', 'iiurlwidth': '1600',
-            'titles': title,
-          }
+          params = {'action': 'query', 'format': 'json', 'formatversion': '2',
+                    'prop': 'imageinfo', 'iiprop': 'url|mime', 'iiurlwidth': '1600', 'titles': title}
           api = 'https://commons.wikimedia.org/w/api.php?' + urllib.parse.urlencode(params)
           payload = json.loads(get(api).decode('utf-8'))
           page = (payload.get('query', {}).get('pages') or [{}])[0]
           info = (page.get('imageinfo') or [{}])[0]
           image = info.get('thumburl') or info.get('url')
-          if not image:
-            raise SystemExit(f'No image URL for {title}: {payload}')
+          if not image: raise SystemExit(f'No image URL for {title}: {payload}')
           raw = get(image)
           suffix = Path(urllib.parse.urlparse(image).path).suffix.lower()
           if suffix not in {'.png', '.jpg', '.jpeg', '.webp'}:
-            mime = info.get('mime', '')
-            suffix = '.png' if 'png' in mime else '.jpg'
-          out = Path('retro_hardware_assets')
-          dest = out / era / f'{slug}{suffix}'
-          dest.parent.mkdir(parents=True, exist_ok=True)
-          dest.write_bytes(raw)
-          row = {'era': era, 'slug': slug, 'title': title, 'status': 'ok',
-                 'file': str(dest), 'image_url': image, 'bytes': len(raw)}
-          out.mkdir(exist_ok=True)
-          (out / f'manifest_exact_{slug}.json').write_text(json.dumps([row], indent=2), encoding='utf-8')
+            suffix = '.png' if 'png' in info.get('mime','') else '.jpg'
+          out = Path('retro_hardware_assets'); dest = out / era / f'{slug}{suffix}'
+          dest.parent.mkdir(parents=True, exist_ok=True); dest.write_bytes(raw)
+          row = {'era': era, 'slug': slug, 'title': title, 'status': 'ok', 'file': str(dest),
+                 'image_url': image, 'bytes': len(raw)}
+          out.mkdir(exist_ok=True); (out/f'manifest_exact_{slug}.json').write_text(json.dumps([row],indent=2),encoding='utf-8')
           print(row)
           PY
       - name: Upload exact hardware image
