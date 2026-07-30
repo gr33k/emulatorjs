@@ -12,7 +12,7 @@ permissions:
 jobs:
   fetch-assets:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -27,10 +27,8 @@ jobs:
 
           SYSTEMS = {
             '1970s': [
-              ('1976_channelf', 'Fairchild Channel F'),
-              ('1977_atari2600', 'Atari 2600'),
-              ('1977_commodore_pet', 'Commodore PET'),
-              ('1978_odyssey2', 'Magnavox Odyssey 2'),
+              ('1976_channelf', 'Fairchild Channel F'), ('1977_atari2600', 'Atari 2600'),
+              ('1977_commodore_pet', 'Commodore PET'), ('1978_odyssey2', 'Magnavox Odyssey 2'),
               ('1979_intellivision', 'Intellivision'),
             ],
             '1980s': [
@@ -50,46 +48,41 @@ jobs:
               ('1989_atari_lynx', 'Atari Lynx'),
             ],
             '1990s': [
-              ('1990_snes', 'Super Nintendo Entertainment System'),
-              ('1990_game_gear', 'Game Gear'), ('1991_cdi', 'CD-i'),
-              ('1991_sega_cd', 'Sega CD'), ('1993_3do', '3DO Interactive Multiplayer'),
-              ('1993_jaguar', 'Atari Jaguar'), ('1994_neogeo_cd', 'Neo Geo CD'),
-              ('1994_32x', '32X'), ('1994_saturn', 'Sega Saturn'),
-              ('1994_playstation', 'PlayStation (console)'), ('1994_pcfx', 'PC-FX'),
-              ('1995_virtual_boy', 'Virtual Boy'), ('1996_n64', 'Nintendo 64'),
-              ('1996_tamagotchi', 'Tamagotchi'), ('1998_game_boy_color', 'Game Boy Color'),
-              ('1998_neogeo_pocket', 'Neo Geo Pocket'), ('1999_wonderswan', 'WonderSwan'),
-              ('1990s_dos_pc', 'IBM PC compatible'),
+              ('1990_snes', 'Super Nintendo Entertainment System'), ('1990_game_gear', 'Game Gear'),
+              ('1991_cdi', 'CD-i'), ('1991_sega_cd', 'Sega CD'),
+              ('1993_3do', '3DO Interactive Multiplayer'), ('1993_jaguar', 'Atari Jaguar'),
+              ('1994_neogeo_cd', 'Neo Geo CD'), ('1994_32x', '32X'),
+              ('1994_saturn', 'Sega Saturn'), ('1994_playstation', 'PlayStation (console)'),
+              ('1994_pcfx', 'PC-FX'), ('1995_virtual_boy', 'Virtual Boy'),
+              ('1996_n64', 'Nintendo 64'), ('1996_tamagotchi', 'Tamagotchi'),
+              ('1998_game_boy_color', 'Game Boy Color'), ('1998_neogeo_pocket', 'Neo Geo Pocket'),
+              ('1999_wonderswan', 'WonderSwan'), ('1990s_dos_pc', 'IBM PC compatible'),
             ],
           }
 
           def norm(value):
             return re.sub(r'[^a-z0-9]+', '', value.lower())
 
-          headers = {'User-Agent': 'EmuHubRetroAssetCollector/1.1 (preservation and editorial project)'}
+          headers = {'User-Agent': 'EmuHubRetroAssetCollector/1.2 (preservation and editorial project)'}
 
-          def request_bytes(url, attempts=7):
+          def request_bytes(url, attempts=2):
+            last = None
             for attempt in range(attempts):
               try:
                 req = urllib.request.Request(url, headers=headers)
-                with urllib.request.urlopen(req, timeout=90) as response:
+                with urllib.request.urlopen(req, timeout=60) as response:
                   return response.read()
-              except urllib.error.HTTPError as exc:
-                if exc.code not in (429, 500, 502, 503, 504) or attempt == attempts - 1:
-                  raise
-                retry = int(exc.headers.get('Retry-After', '0') or 0)
-                time.sleep(max(retry, 3 * (attempt + 1)))
-              except Exception:
-                if attempt == attempts - 1:
-                  raise
-                time.sleep(3 * (attempt + 1))
+              except Exception as exc:
+                last = exc
+                if attempt + 1 < attempts:
+                  time.sleep(3)
+            raise last
 
           all_items = [(era, slug, title) for era, rows in SYSTEMS.items() for slug, title in rows]
-          titles = [title for _, _, title in all_items]
           params = {
             'action': 'query', 'format': 'json', 'formatversion': '2', 'redirects': '1',
-            'prop': 'pageimages', 'piprop': 'thumbnail|original', 'pithumbsize': '1600',
-            'titles': '|'.join(titles),
+            'prop': 'pageimages', 'piprop': 'thumbnail|original', 'pithumbsize': '1400',
+            'titles': '|'.join(title for _, _, title in all_items),
           }
           api = 'https://en.wikipedia.org/w/api.php?' + urllib.parse.urlencode(params)
           payload = json.loads(request_bytes(api).decode('utf-8'))
@@ -100,7 +93,6 @@ jobs:
           out = Path('retro_hardware_assets')
           out.mkdir(exist_ok=True)
           manifest = []
-
           for era, slug, title in all_items:
             era_dir = out / era
             era_dir.mkdir(exist_ok=True)
@@ -109,29 +101,23 @@ jobs:
             image = (page.get('thumbnail') or page.get('original') or {}).get('source')
             item = {'era': era, 'slug': slug, 'title': title, 'resolved_title': page.get('title', '')}
             if not image:
-              item['status'] = 'no_image'
-              manifest.append(item)
-              print('NO IMAGE', title)
-              continue
+              item['status'] = 'no_image'; manifest.append(item); print('NO IMAGE', title); continue
             try:
               raw = request_bytes(image)
               suffix = Path(urllib.parse.urlparse(image).path).suffix.lower()
-              if suffix not in {'.png', '.jpg', '.jpeg', '.webp'}:
-                suffix = '.jpg'
+              if suffix not in {'.png', '.jpg', '.jpeg', '.webp'}: suffix = '.jpg'
               dest = era_dir / f'{slug}{suffix}'
               dest.write_bytes(raw)
               item.update({'status': 'ok', 'file': str(dest), 'image_url': image, 'bytes': len(raw)})
-              manifest.append(item)
               print('OK', title, '->', dest)
             except Exception as exc:
               item.update({'status': 'error', 'error': repr(exc), 'image_url': image})
-              manifest.append(item)
-              print('ERROR', title, exc)
-            time.sleep(1.2)
+              print('SKIP', title, exc)
+            manifest.append(item)
+            time.sleep(2.0)
 
           (out / 'manifest.json').write_text(json.dumps(manifest, indent=2), encoding='utf-8')
-          ok = sum(item.get('status') == 'ok' for item in manifest)
-          print(f'Downloaded {ok}/{len(manifest)} authentic hardware images')
+          print('Downloaded', sum(x.get('status') == 'ok' for x in manifest), '/', len(manifest))
           PY
       - name: Upload authentic hardware pack
         if: always()
