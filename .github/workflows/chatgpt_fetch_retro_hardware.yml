@@ -10,19 +10,17 @@ permissions:
   contents: read
 
 jobs:
-  fetch-missing:
+  fetch-exact-device:
     strategy:
       fail-fast: false
       matrix:
         include:
-          - { era: '1980s', slug: '1981_zx81', title: 'ZX81' }
-          - { era: '1980s', slug: '1982_sharp_x1', title: 'Sharp X1' }
-          - { era: '1980s', slug: '1983_nes', title: 'Nintendo Entertainment System' }
-          - { era: '1980s', slug: '1985_amiga', title: 'Amiga 1000' }
-          - { era: '1990s', slug: '1991_sega_cd', title: 'Sega CD' }
-          - { era: '1990s', slug: '1993_jaguar', title: 'Atari Jaguar' }
-          - { era: '1990s', slug: '1998_game_boy_color', title: 'Game Boy Color' }
-          - { era: '1990s', slug: '1999_wonderswan', title: 'WonderSwan' }
+          - { era: '1980s', slug: '1980_game_watch', title: 'File:Nintendo-game-and-watch-wide-screen.jpg' }
+          - { era: '1980s', slug: '1981_ibm_pc', title: 'File:Ibm pc 5150.jpg' }
+          - { era: '1990s', slug: '1991_cdi', title: 'File:Philips-CDi-400-Console-Set.png' }
+          - { era: '1990s', slug: '1993_jaguar', title: 'File:Atari-Jaguar-Console-Set.png' }
+          - { era: '1990s', slug: '1994_playstation', title: 'File:PlayStation SCPH 1000 with Controller.png' }
+          - { era: '1990s', slug: '1999_wonderswan', title: 'File:Bandai wonderswan consoles.jpg' }
     runs-on: ubuntu-latest
     timeout-minutes: 6
     steps:
@@ -30,7 +28,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Fetch one authentic hardware image
+      - name: Fetch exact Wikimedia file
         env:
           ERA: ${{ matrix.era }}
           SLUG: ${{ matrix.slug }}
@@ -38,34 +36,45 @@ jobs:
         shell: bash
         run: |
           python - <<'PY'
-          import json, os, re, time, urllib.parse, urllib.request
+          import json, os, urllib.parse, urllib.request
           from pathlib import Path
-          era,slug,title=os.environ['ERA'],os.environ['SLUG'],os.environ['TITLE']
-          headers={'User-Agent':f'EmuHubRetroAssetCollector/3.0-{slug} (single editorial image request)'}
+          era, slug, title = os.environ['ERA'], os.environ['SLUG'], os.environ['TITLE']
+          headers = {'User-Agent': f'EmuHubExactHardware/1.0-{slug} (editorial preservation project)'}
           def get(url):
-            req=urllib.request.Request(url,headers=headers)
-            with urllib.request.urlopen(req,timeout=90) as r: return r.read()
-          params={'action':'query','format':'json','formatversion':'2','redirects':'1','prop':'pageimages',
-                  'piprop':'thumbnail|original','pithumbsize':'1200','titles':title}
-          api='https://en.wikipedia.org/w/api.php?'+urllib.parse.urlencode(params)
-          payload=json.loads(get(api).decode())
-          page=(payload.get('query',{}).get('pages') or [{}])[0]
-          image=(page.get('thumbnail') or page.get('original') or {}).get('source')
-          out=Path('retro_hardware_assets'); row={'era':era,'slug':slug,'title':title,'resolved_title':page.get('title','')}
-          if image:
-            raw=get(image); suffix=Path(urllib.parse.urlparse(image).path).suffix.lower()
-            if suffix not in {'.png','.jpg','.jpeg','.webp'}: suffix='.jpg'
-            dest=out/era/f'{slug}{suffix}'; dest.parent.mkdir(parents=True,exist_ok=True); dest.write_bytes(raw)
-            row.update({'status':'ok','file':str(dest),'image_url':image,'bytes':len(raw)})
-          else: row['status']='no_image'
-          out.mkdir(exist_ok=True); (out/f'manifest_{slug}.json').write_text(json.dumps([row],indent=2),encoding='utf-8')
+            req = urllib.request.Request(url, headers=headers)
+            with urllib.request.urlopen(req, timeout=90) as response:
+              return response.read()
+          params = {
+            'action': 'query', 'format': 'json', 'formatversion': '2',
+            'prop': 'imageinfo', 'iiprop': 'url|mime', 'iiurlwidth': '1600',
+            'titles': title,
+          }
+          api = 'https://commons.wikimedia.org/w/api.php?' + urllib.parse.urlencode(params)
+          payload = json.loads(get(api).decode('utf-8'))
+          page = (payload.get('query', {}).get('pages') or [{}])[0]
+          info = (page.get('imageinfo') or [{}])[0]
+          image = info.get('thumburl') or info.get('url')
+          if not image:
+            raise SystemExit(f'No image URL for {title}: {payload}')
+          raw = get(image)
+          suffix = Path(urllib.parse.urlparse(image).path).suffix.lower()
+          if suffix not in {'.png', '.jpg', '.jpeg', '.webp'}:
+            mime = info.get('mime', '')
+            suffix = '.png' if 'png' in mime else '.jpg'
+          out = Path('retro_hardware_assets')
+          dest = out / era / f'{slug}{suffix}'
+          dest.parent.mkdir(parents=True, exist_ok=True)
+          dest.write_bytes(raw)
+          row = {'era': era, 'slug': slug, 'title': title, 'status': 'ok',
+                 'file': str(dest), 'image_url': image, 'bytes': len(raw)}
+          out.mkdir(exist_ok=True)
+          (out / f'manifest_exact_{slug}.json').write_text(json.dumps([row], indent=2), encoding='utf-8')
           print(row)
           PY
-      - name: Upload missing hardware image
-        if: always()
+      - name: Upload exact hardware image
         uses: actions/upload-artifact@v4
         with:
-          name: emuhub-missing-${{ matrix.slug }}
+          name: emuhub-exact-${{ matrix.slug }}
           path: retro_hardware_assets
           if-no-files-found: error
           retention-days: 3
