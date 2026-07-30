@@ -10,91 +10,62 @@ permissions:
   contents: read
 
 jobs:
-  fetch-assets:
+  fetch-missing:
     strategy:
       fail-fast: false
       matrix:
-        chunk: [0, 1, 2, 3, 4]
+        include:
+          - { era: '1980s', slug: '1981_zx81', title: 'ZX81' }
+          - { era: '1980s', slug: '1982_sharp_x1', title: 'Sharp X1' }
+          - { era: '1980s', slug: '1983_nes', title: 'Nintendo Entertainment System' }
+          - { era: '1980s', slug: '1985_amiga', title: 'Amiga 1000' }
+          - { era: '1990s', slug: '1991_sega_cd', title: 'Sega CD' }
+          - { era: '1990s', slug: '1993_jaguar', title: 'Atari Jaguar' }
+          - { era: '1990s', slug: '1998_game_boy_color', title: 'Game Boy Color' }
+          - { era: '1990s', slug: '1999_wonderswan', title: 'WonderSwan' }
     runs-on: ubuntu-latest
-    timeout-minutes: 10
-    env:
-      CHUNK: ${{ matrix.chunk }}
+    timeout-minutes: 6
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Fetch authentic hardware chunk
+      - name: Fetch one authentic hardware image
+        env:
+          ERA: ${{ matrix.era }}
+          SLUG: ${{ matrix.slug }}
+          TITLE: ${{ matrix.title }}
         shell: bash
         run: |
           python - <<'PY'
           import json, os, re, time, urllib.parse, urllib.request
           from pathlib import Path
-
-          SYSTEMS = [
-            ('1970s','1976_channelf','Fairchild Channel F'), ('1970s','1977_atari2600','Atari 2600'),
-            ('1970s','1977_commodore_pet','Commodore PET'), ('1970s','1978_odyssey2','Magnavox Odyssey 2'),
-            ('1970s','1979_intellivision','Intellivision'),
-            ('1980s','1980_vic20','VIC-20'), ('1980s','1980_p2000t','Philips P2000'),
-            ('1980s','1980_game_watch','Game & Watch'), ('1980s','1981_zx81','ZX81'),
-            ('1980s','1981_pc8801','PC-8800 series'), ('1980s','1981_ibm_pc','IBM Personal Computer'),
-            ('1980s','1982_atari5200','Atari 5200'), ('1980s','1982_colecovision','ColecoVision'),
-            ('1980s','1982_c64','Commodore 64'), ('1980s','1982_vectrex','Vectrex'),
-            ('1980s','1982_zxspectrum','ZX Spectrum'), ('1980s','1982_sharp_x1','Sharp X1'),
-            ('1980s','1983_sg1000','SG-1000'), ('1980s','1983_nes','Nintendo Entertainment System'),
-            ('1980s','1983_msx','MSX'), ('1980s','1984_amstrad_cpc','Amstrad CPC'),
-            ('1980s','1984_plus4','Commodore Plus/4'), ('1980s','1985_c128','Commodore 128'),
-            ('1980s','1985_amiga','Amiga 1000'), ('1980s','1985_msx2','MSX2'),
-            ('1980s','1985_master_system','Master System'), ('1980s','1986_atari7800','Atari 7800'),
-            ('1980s','1987_pc_engine','PC Engine'), ('1980s','1988_genesis','Sega Genesis'),
-            ('1980s','1988_pc_engine_cd','PC Engine CD-ROM²'), ('1980s','1989_game_boy','Game Boy'),
-            ('1980s','1989_atari_lynx','Atari Lynx'),
-            ('1990s','1990_snes','Super Nintendo Entertainment System'), ('1990s','1990_game_gear','Game Gear'),
-            ('1990s','1991_cdi','CD-i'), ('1990s','1991_sega_cd','Sega CD'),
-            ('1990s','1993_3do','3DO Interactive Multiplayer'), ('1990s','1993_jaguar','Atari Jaguar'),
-            ('1990s','1994_neogeo_cd','Neo Geo CD'), ('1990s','1994_32x','32X'),
-            ('1990s','1994_saturn','Sega Saturn'), ('1990s','1994_playstation','PlayStation (console)'),
-            ('1990s','1994_pcfx','PC-FX'), ('1990s','1995_virtual_boy','Virtual Boy'),
-            ('1990s','1996_n64','Nintendo 64'), ('1990s','1996_tamagotchi','Tamagotchi'),
-            ('1990s','1998_game_boy_color','Game Boy Color'), ('1990s','1998_neogeo_pocket','Neo Geo Pocket'),
-            ('1990s','1999_wonderswan','WonderSwan'), ('1990s','1990s_dos_pc','IBM PC compatible'),
-          ]
-          chunk=int(os.environ['CHUNK'])
-          items=SYSTEMS[chunk*10:(chunk+1)*10]
-          def norm(v): return re.sub(r'[^a-z0-9]+','',v.lower())
-          headers={'User-Agent':f'EmuHubRetroAssetCollector/2.0-chunk-{chunk} (editorial preservation project; contact user via GitHub)'}
+          era,slug,title=os.environ['ERA'],os.environ['SLUG'],os.environ['TITLE']
+          headers={'User-Agent':f'EmuHubRetroAssetCollector/3.0-{slug} (single editorial image request)'}
           def get(url):
             req=urllib.request.Request(url,headers=headers)
-            with urllib.request.urlopen(req,timeout=75) as r: return r.read()
+            with urllib.request.urlopen(req,timeout=90) as r: return r.read()
           params={'action':'query','format':'json','formatversion':'2','redirects':'1','prop':'pageimages',
-                  'piprop':'thumbnail|original','pithumbsize':'1200','titles':'|'.join(x[2] for x in items)}
+                  'piprop':'thumbnail|original','pithumbsize':'1200','titles':title}
           api='https://en.wikipedia.org/w/api.php?'+urllib.parse.urlencode(params)
           payload=json.loads(get(api).decode())
-          q=payload.get('query',{}); redirects={norm(x.get('from','')):norm(x.get('to','')) for x in q.get('redirects',[])}
-          pages={norm(x.get('title','')):x for x in q.get('pages',[])}
-          out=Path('retro_hardware_assets'); out.mkdir(exist_ok=True); manifest=[]
-          for era,slug,title in items:
-            page=pages.get(redirects.get(norm(title),norm(title))) or pages.get(norm(title)) or {}
-            image=(page.get('thumbnail') or page.get('original') or {}).get('source')
-            row={'era':era,'slug':slug,'title':title,'resolved_title':page.get('title','')}
-            if not image:
-              row['status']='no_image'; manifest.append(row); print('NO IMAGE',title); continue
-            try:
-              raw=get(image); suffix=Path(urllib.parse.urlparse(image).path).suffix.lower()
-              if suffix not in {'.png','.jpg','.jpeg','.webp'}: suffix='.jpg'
-              dest=out/era/f'{slug}{suffix}'; dest.parent.mkdir(parents=True,exist_ok=True); dest.write_bytes(raw)
-              row.update({'status':'ok','file':str(dest),'image_url':image,'bytes':len(raw)})
-              print('OK',title)
-            except Exception as exc:
-              row.update({'status':'error','image_url':image,'error':repr(exc)}); print('ERROR',title,exc)
-            manifest.append(row); time.sleep(2.4)
-          (out/f'manifest_chunk_{chunk}.json').write_text(json.dumps(manifest,indent=2),encoding='utf-8')
+          page=(payload.get('query',{}).get('pages') or [{}])[0]
+          image=(page.get('thumbnail') or page.get('original') or {}).get('source')
+          out=Path('retro_hardware_assets'); row={'era':era,'slug':slug,'title':title,'resolved_title':page.get('title','')}
+          if image:
+            raw=get(image); suffix=Path(urllib.parse.urlparse(image).path).suffix.lower()
+            if suffix not in {'.png','.jpg','.jpeg','.webp'}: suffix='.jpg'
+            dest=out/era/f'{slug}{suffix}'; dest.parent.mkdir(parents=True,exist_ok=True); dest.write_bytes(raw)
+            row.update({'status':'ok','file':str(dest),'image_url':image,'bytes':len(raw)})
+          else: row['status']='no_image'
+          out.mkdir(exist_ok=True); (out/f'manifest_{slug}.json').write_text(json.dumps([row],indent=2),encoding='utf-8')
+          print(row)
           PY
-      - name: Upload authentic hardware chunk
+      - name: Upload missing hardware image
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: emuhub-authentic-retro-hardware-${{ matrix.chunk }}
+          name: emuhub-missing-${{ matrix.slug }}
           path: retro_hardware_assets
           if-no-files-found: error
           retention-days: 3
