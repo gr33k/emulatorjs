@@ -21,7 +21,7 @@ permissions:
 jobs:
   fetch-assets:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 35
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -34,8 +34,11 @@ jobs:
       - name: Install downloader dependencies
         run: python -m pip install --upgrade requests
 
-      - name: Fetch authentic hardware and gameplay source media
+      - name: Fetch authentic public hardware and gameplay source media
         run: python tools/emuhub_v19/fetch_assets_fast.py
+
+      - name: Add verified NBBA console images and Infura IPFS gameplay
+        run: python tools/emuhub_v19/augment_theme_and_infura.py
 
       - name: Show source summary
         run: |
