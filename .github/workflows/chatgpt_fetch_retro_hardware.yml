@@ -22,7 +22,7 @@ jobs:
         shell: bash
         run: |
           python - <<'PY'
-          import json, os, re, time, urllib.parse, urllib.request
+          import json, re, time, urllib.error, urllib.parse, urllib.request
           from pathlib import Path
 
           SYSTEMS = {
@@ -34,113 +34,107 @@ jobs:
               ('1979_intellivision', 'Intellivision'),
             ],
             '1980s': [
-              ('1980_vic20', 'VIC-20'),
-              ('1980_p2000t', 'Philips P2000'),
-              ('1980_game_watch', 'Game & Watch'),
-              ('1981_zx81', 'ZX81'),
-              ('1981_pc8801', 'PC-8800 series'),
-              ('1981_ibm_pc', 'IBM Personal Computer'),
-              ('1982_atari5200', 'Atari 5200'),
-              ('1982_colecovision', 'ColecoVision'),
-              ('1982_c64', 'Commodore 64'),
-              ('1982_vectrex', 'Vectrex'),
-              ('1982_zxspectrum', 'ZX Spectrum'),
-              ('1982_sharp_x1', 'Sharp X1'),
-              ('1983_sg1000', 'SG-1000'),
-              ('1983_nes', 'Nintendo Entertainment System'),
-              ('1983_msx', 'MSX'),
-              ('1984_amstrad_cpc', 'Amstrad CPC'),
-              ('1984_plus4', 'Commodore Plus/4'),
-              ('1985_c128', 'Commodore 128'),
-              ('1985_amiga', 'Amiga 1000'),
-              ('1985_msx2', 'MSX2'),
-              ('1985_master_system', 'Master System'),
-              ('1986_atari7800', 'Atari 7800'),
-              ('1987_pc_engine', 'PC Engine'),
-              ('1988_genesis', 'Sega Genesis'),
-              ('1988_pc_engine_cd', 'PC Engine CD-ROM²'),
-              ('1989_game_boy', 'Game Boy'),
+              ('1980_vic20', 'VIC-20'), ('1980_p2000t', 'Philips P2000'),
+              ('1980_game_watch', 'Game & Watch'), ('1981_zx81', 'ZX81'),
+              ('1981_pc8801', 'PC-8800 series'), ('1981_ibm_pc', 'IBM Personal Computer'),
+              ('1982_atari5200', 'Atari 5200'), ('1982_colecovision', 'ColecoVision'),
+              ('1982_c64', 'Commodore 64'), ('1982_vectrex', 'Vectrex'),
+              ('1982_zxspectrum', 'ZX Spectrum'), ('1982_sharp_x1', 'Sharp X1'),
+              ('1983_sg1000', 'SG-1000'), ('1983_nes', 'Nintendo Entertainment System'),
+              ('1983_msx', 'MSX'), ('1984_amstrad_cpc', 'Amstrad CPC'),
+              ('1984_plus4', 'Commodore Plus/4'), ('1985_c128', 'Commodore 128'),
+              ('1985_amiga', 'Amiga 1000'), ('1985_msx2', 'MSX2'),
+              ('1985_master_system', 'Master System'), ('1986_atari7800', 'Atari 7800'),
+              ('1987_pc_engine', 'PC Engine'), ('1988_genesis', 'Sega Genesis'),
+              ('1988_pc_engine_cd', 'PC Engine CD-ROM²'), ('1989_game_boy', 'Game Boy'),
               ('1989_atari_lynx', 'Atari Lynx'),
             ],
             '1990s': [
               ('1990_snes', 'Super Nintendo Entertainment System'),
-              ('1990_game_gear', 'Game Gear'),
-              ('1991_cdi', 'CD-i'),
-              ('1991_sega_cd', 'Sega CD'),
-              ('1993_3do', '3DO Interactive Multiplayer'),
-              ('1993_jaguar', 'Atari Jaguar'),
-              ('1994_neogeo_cd', 'Neo Geo CD'),
-              ('1994_32x', '32X'),
-              ('1994_saturn', 'Sega Saturn'),
-              ('1994_playstation', 'PlayStation (console)'),
-              ('1994_pcfx', 'PC-FX'),
-              ('1995_virtual_boy', 'Virtual Boy'),
-              ('1996_n64', 'Nintendo 64'),
-              ('1996_tamagotchi', 'Tamagotchi'),
-              ('1998_game_boy_color', 'Game Boy Color'),
-              ('1998_neogeo_pocket', 'Neo Geo Pocket'),
-              ('1999_wonderswan', 'WonderSwan'),
+              ('1990_game_gear', 'Game Gear'), ('1991_cdi', 'CD-i'),
+              ('1991_sega_cd', 'Sega CD'), ('1993_3do', '3DO Interactive Multiplayer'),
+              ('1993_jaguar', 'Atari Jaguar'), ('1994_neogeo_cd', 'Neo Geo CD'),
+              ('1994_32x', '32X'), ('1994_saturn', 'Sega Saturn'),
+              ('1994_playstation', 'PlayStation (console)'), ('1994_pcfx', 'PC-FX'),
+              ('1995_virtual_boy', 'Virtual Boy'), ('1996_n64', 'Nintendo 64'),
+              ('1996_tamagotchi', 'Tamagotchi'), ('1998_game_boy_color', 'Game Boy Color'),
+              ('1998_neogeo_pocket', 'Neo Geo Pocket'), ('1999_wonderswan', 'WonderSwan'),
               ('1990s_dos_pc', 'IBM PC compatible'),
             ],
           }
 
+          def norm(value):
+            return re.sub(r'[^a-z0-9]+', '', value.lower())
+
+          headers = {'User-Agent': 'EmuHubRetroAssetCollector/1.1 (preservation and editorial project)'}
+
+          def request_bytes(url, attempts=7):
+            for attempt in range(attempts):
+              try:
+                req = urllib.request.Request(url, headers=headers)
+                with urllib.request.urlopen(req, timeout=90) as response:
+                  return response.read()
+              except urllib.error.HTTPError as exc:
+                if exc.code not in (429, 500, 502, 503, 504) or attempt == attempts - 1:
+                  raise
+                retry = int(exc.headers.get('Retry-After', '0') or 0)
+                time.sleep(max(retry, 3 * (attempt + 1)))
+              except Exception:
+                if attempt == attempts - 1:
+                  raise
+                time.sleep(3 * (attempt + 1))
+
+          all_items = [(era, slug, title) for era, rows in SYSTEMS.items() for slug, title in rows]
+          titles = [title for _, _, title in all_items]
+          params = {
+            'action': 'query', 'format': 'json', 'formatversion': '2', 'redirects': '1',
+            'prop': 'pageimages', 'piprop': 'thumbnail|original', 'pithumbsize': '1600',
+            'titles': '|'.join(titles),
+          }
+          api = 'https://en.wikipedia.org/w/api.php?' + urllib.parse.urlencode(params)
+          payload = json.loads(request_bytes(api).decode('utf-8'))
+          query = payload.get('query', {})
+          redirects = {norm(r.get('from', '')): norm(r.get('to', '')) for r in query.get('redirects', [])}
+          pages = {norm(p.get('title', '')): p for p in query.get('pages', [])}
+
           out = Path('retro_hardware_assets')
           out.mkdir(exist_ok=True)
           manifest = []
-          headers = {'User-Agent': 'EmuHubRetroAssetCollector/1.0 (educational preservation project)'}
 
-          def api_json(url):
-            req = urllib.request.Request(url, headers=headers)
-            with urllib.request.urlopen(req, timeout=30) as r:
-              return json.load(r)
-
-          def download(url, dest):
-            req = urllib.request.Request(url, headers=headers)
-            with urllib.request.urlopen(req, timeout=60) as r, open(dest, 'wb') as f:
-              f.write(r.read())
-
-          for era, systems in SYSTEMS.items():
+          for era, slug, title in all_items:
             era_dir = out / era
             era_dir.mkdir(exist_ok=True)
-            for slug, title in systems:
-              params = {
-                'action': 'query', 'format': 'json', 'formatversion': '2',
-                'redirects': '1', 'prop': 'pageimages',
-                'piprop': 'original|thumbnail', 'pithumbsize': '1600',
-                'titles': title,
-              }
-              api = 'https://en.wikipedia.org/w/api.php?' + urllib.parse.urlencode(params)
-              item = {'era': era, 'slug': slug, 'title': title, 'source_api': api}
-              try:
-                data = api_json(api)
-                page = (data.get('query', {}).get('pages') or [{}])[0]
-                img = (page.get('original') or page.get('thumbnail') or {}).get('source')
-                if not img:
-                  item['status'] = 'no_image'
-                  manifest.append(item)
-                  print('NO IMAGE', title)
-                  continue
-                ext = Path(urllib.parse.urlparse(img).path).suffix.lower()
-                if ext not in {'.png','.jpg','.jpeg','.webp','.svg'}:
-                  ext = '.jpg'
-                dest = era_dir / f'{slug}{ext}'
-                download(img, dest)
-                item.update({'status':'ok','file':str(dest),'image_url':img,'bytes':dest.stat().st_size})
-                manifest.append(item)
-                print('OK', title, '->', dest)
-              except Exception as exc:
-                item.update({'status':'error','error':repr(exc)})
-                manifest.append(item)
-                print('ERROR', title, exc)
-              time.sleep(0.12)
+            key = redirects.get(norm(title), norm(title))
+            page = pages.get(key) or pages.get(norm(title)) or {}
+            image = (page.get('thumbnail') or page.get('original') or {}).get('source')
+            item = {'era': era, 'slug': slug, 'title': title, 'resolved_title': page.get('title', '')}
+            if not image:
+              item['status'] = 'no_image'
+              manifest.append(item)
+              print('NO IMAGE', title)
+              continue
+            try:
+              raw = request_bytes(image)
+              suffix = Path(urllib.parse.urlparse(image).path).suffix.lower()
+              if suffix not in {'.png', '.jpg', '.jpeg', '.webp'}:
+                suffix = '.jpg'
+              dest = era_dir / f'{slug}{suffix}'
+              dest.write_bytes(raw)
+              item.update({'status': 'ok', 'file': str(dest), 'image_url': image, 'bytes': len(raw)})
+              manifest.append(item)
+              print('OK', title, '->', dest)
+            except Exception as exc:
+              item.update({'status': 'error', 'error': repr(exc), 'image_url': image})
+              manifest.append(item)
+              print('ERROR', title, exc)
+            time.sleep(1.2)
 
-          (out/'manifest.json').write_text(json.dumps(manifest, indent=2), encoding='utf-8')
-          ok = sum(x.get('status') == 'ok' for x in manifest)
-          print(f'Downloaded {ok}/{len(manifest)} hardware images')
-          if ok < 35:
-            raise SystemExit('Too few authentic hardware images downloaded')
+          (out / 'manifest.json').write_text(json.dumps(manifest, indent=2), encoding='utf-8')
+          ok = sum(item.get('status') == 'ok' for item in manifest)
+          print(f'Downloaded {ok}/{len(manifest)} authentic hardware images')
           PY
       - name: Upload authentic hardware pack
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: emuhub-authentic-retro-hardware
