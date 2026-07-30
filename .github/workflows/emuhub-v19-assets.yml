@@ -21,7 +21,7 @@ permissions:
 jobs:
   fetch-assets:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 30
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -35,19 +35,15 @@ jobs:
         run: python -m pip install --upgrade requests
 
       - name: Fetch authentic hardware and gameplay source media
-        run: |
-          python tools/emuhub_v19/fetch_assets.py || echo 'Asset fetch completed with missing rare systems; missing items will be omitted.'
+        run: python tools/emuhub_v19/fetch_assets_fast.py
 
       - name: Show source summary
         run: |
           python - <<'PY'
           import json, pathlib
           p = pathlib.Path('v19_source_assets/asset_manifest.json')
-          if p.exists():
-              data = json.loads(p.read_text())
-              print(json.dumps(data.get('summary', {}), indent=2))
-          else:
-              print('No manifest was produced')
+          data = json.loads(p.read_text())
+          print(json.dumps(data.get('summary', {}), indent=2))
           PY
 
       - name: Package source media
