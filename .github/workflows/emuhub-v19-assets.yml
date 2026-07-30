@@ -7,6 +7,12 @@ on:
     paths:
       - 'tools/emuhub_v19/**'
       - '.github/workflows/emuhub-v19-assets.yml'
+  pull_request:
+    branches:
+      - master
+    paths:
+      - 'tools/emuhub_v19/**'
+      - '.github/workflows/emuhub-v19-assets.yml'
   workflow_dispatch:
 
 permissions:
