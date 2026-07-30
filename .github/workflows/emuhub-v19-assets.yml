@@ -1,0 +1,68 @@
+name: EmuHub V19 Authentic Asset Pack
+
+on:
+  push:
+    branches:
+      - chatgpt-emuhub-v19-final
+    paths:
+      - 'tools/emuhub_v19/**'
+      - '.github/workflows/emuhub-v19-assets.yml'
+  pull_request:
+    branches:
+      - master
+    paths:
+      - 'tools/emuhub_v19/**'
+      - '.github/workflows/emuhub-v19-assets.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  fetch-assets:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install downloader dependencies
+        run: python -m pip install --upgrade requests
+
+      - name: Fetch authentic public hardware and gameplay source media
+        run: python tools/emuhub_v19/fetch_assets_fast.py
+
+      - name: Add verified NBBA console images and Infura IPFS gameplay
+        run: python tools/emuhub_v19/augment_theme_and_infura.py
+
+      - name: Show source summary
+        run: |
+          python - <<'PY'
+          import json, pathlib
+          p = pathlib.Path('v19_source_assets/asset_manifest.json')
+          data = json.loads(p.read_text())
+          print(json.dumps(data.get('summary', {}), indent=2))
+          PY
+
+      - name: Package source media
+        run: |
+          python - <<'PY'
+          import shutil
+          shutil.make_archive('EmuHub_V19_Authentic_Source_Assets', 'zip', 'v19_source_assets')
+          PY
+
+      - name: Upload source-media artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: EmuHub-V19-Authentic-Source-Assets
+          path: |
+            EmuHub_V19_Authentic_Source_Assets.zip
+            v19_source_assets/asset_manifest.json
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 7
